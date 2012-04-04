@@ -1,0 +1,1970 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="744.09448"
+   id="svg31169"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="New document 20">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="601.64964"
+     inkscape:cy="337.26341"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1150"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1" />
+  <defs
+     id="defs31171">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Send"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send">
+      <path
+         transform="scale(0.2) rotate(180) translate(6,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path33283" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path33277"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend2"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend2"
+       style="overflow:visible;">
+      <path
+         id="path33720"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="marker-start:none;stroke:#ffffff;stroke-width:1.0pt;fill:#ffffff;fill-rule:evenodd"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend27"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend27"
+       style="overflow:visible;">
+      <path
+         id="path34552"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;marker-start:none;stroke:#ffff00;stroke-width:1.0pt;fill:#ffff00"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+  </defs>
+  <metadata
+     id="metadata31174">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.2677)">
+    <g
+       id="g32436">
+      <rect
+         id="rect4976"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="240.47453"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text4978"
+         y="854.70551"
+         x="244.47453"
+         style="font-size:7px">Ru87</text>
+      <text
+         id="text4980"
+         y="869.70551"
+         x="247.47453"
+         style="font-size:5px">50 ms</text>
+      <rect
+         id="rect5052"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="272.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5054"
+         y="854.70551"
+         x="276.47455"
+         style="font-size:7px">Ru88</text>
+      <text
+         id="text5056"
+         y="869.70551"
+         x="279.47455"
+         style="font-size:5px">1.3 s</text>
+      <rect
+         id="rect5128"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="304.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5130"
+         y="854.70551"
+         x="308.47455"
+         style="font-size:7px">Ru89</text>
+      <text
+         id="text5132"
+         y="869.70551"
+         x="310.47455"
+         style="font-size:5px">1.38 s</text>
+      <rect
+         id="rect5134"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="272.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5136"
+         y="822.70551"
+         x="276.47455"
+         style="font-size:7px">Rh89</text>
+      <text
+         id="text5138"
+         y="837.70551"
+         x="279.47455"
+         style="font-size:5px">10 ms</text>
+      <rect
+         id="rect5204"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="336.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5206"
+         y="854.70551"
+         x="340.47455"
+         style="font-size:7px">Ru90</text>
+      <text
+         id="text5208"
+         y="869.70551"
+         x="344.47455"
+         style="font-size:5px">11 s</text>
+      <rect
+         id="rect5210"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="304.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5212"
+         y="822.70551"
+         x="308.47455"
+         style="font-size:7px">Rh90</text>
+      <text
+         id="text5214"
+         y="837.70551"
+         x="311.47455"
+         style="font-size:5px">15 ms</text>
+      <rect
+         id="rect5280"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="368.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5282"
+         y="854.70551"
+         x="372.47455"
+         style="font-size:7px">Ru91</text>
+      <text
+         id="text5284"
+         y="869.70551"
+         x="377.47455"
+         style="font-size:5px">9 s</text>
+      <rect
+         id="rect5286"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="336.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5288"
+         y="822.70551"
+         x="340.47455"
+         style="font-size:7px">Rh91</text>
+      <text
+         id="text5290"
+         y="837.70551"
+         x="342.47455"
+         style="font-size:5px">1.74 s</text>
+      <rect
+         id="rect5292"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="304.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5294"
+         y="790.70551"
+         x="308.47455"
+         style="font-size:7px">Pd91</text>
+      <text
+         id="text5296"
+         y="805.70551"
+         x="311.47455"
+         style="font-size:5px">10 ms</text>
+      <rect
+         id="rect5360"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="400.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5362"
+         y="854.70551"
+         x="404.47455"
+         style="font-size:7px">Ru92</text>
+      <text
+         id="text5364"
+         y="869.70551"
+         x="406.47455"
+         style="font-size:5px">3.65 m</text>
+      <rect
+         id="rect5366"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="368.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5368"
+         y="822.70551"
+         x="372.47455"
+         style="font-size:7px">Rh92</text>
+      <text
+         id="text5370"
+         y="837.70551"
+         x="375.47455"
+         style="font-size:5px">4.3 s</text>
+      <rect
+         id="rect5372"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="336.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5374"
+         y="790.70551"
+         x="340.47455"
+         style="font-size:7px">Pd92</text>
+      <text
+         id="text5376"
+         y="805.70551"
+         x="343.47455"
+         style="font-size:5px">1.1 s</text>
+      <rect
+         id="rect5436"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5438"
+         y="854.70551"
+         x="436.47455"
+         style="font-size:7px">Ru93</text>
+      <text
+         id="text5440"
+         y="869.70551"
+         x="438.47455"
+         style="font-size:5px">59.7 s</text>
+      <rect
+         id="rect5442"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="400.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5444"
+         y="822.70551"
+         x="404.47455"
+         style="font-size:7px">Rh93</text>
+      <text
+         id="text5446"
+         y="837.70551"
+         x="406.47455"
+         style="font-size:5px">13.9 s</text>
+      <rect
+         id="rect5448"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="368.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5450"
+         y="790.70551"
+         x="372.47455"
+         style="font-size:7px">Pd93</text>
+      <text
+         id="text5452"
+         y="805.70551"
+         x="374.47455"
+         style="font-size:5px">1.07 s</text>
+      <rect
+         id="rect5454"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="336.47455"
+         style="fill:#ffa425;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5456"
+         y="758.70551"
+         x="340.47455"
+         style="font-size:7px">Ag93</text>
+      <text
+         id="text5458"
+         y="773.70551"
+         x="344.47455"
+         style="font-size:5px">5 ms</text>
+      <rect
+         id="rect5516"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5518"
+         y="854.70551"
+         x="468.47455"
+         style="font-size:7px">Ru94</text>
+      <text
+         id="text5520"
+         y="869.70551"
+         x="470.47455"
+         style="font-size:5px">51.8 m</text>
+      <rect
+         id="rect5522"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5524"
+         y="822.70551"
+         x="436.47455"
+         style="font-size:7px">Rh94</text>
+      <text
+         id="text5526"
+         y="837.70551"
+         x="438.47455"
+         style="font-size:5px">70.6 s</text>
+      <rect
+         id="rect5528"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="400.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5530"
+         y="790.70551"
+         x="404.47455"
+         style="font-size:7px">Pd94</text>
+      <text
+         id="text5532"
+         y="805.70551"
+         x="407.47455"
+         style="font-size:5px">9.0 s</text>
+      <rect
+         id="rect5534"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="368.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5536"
+         y="758.70551"
+         x="372.47455"
+         style="font-size:7px">Ag94</text>
+      <text
+         id="text5538"
+         y="773.70551"
+         x="375.47455"
+         style="font-size:5px">37 ms</text>
+      <rect
+         id="rect5592"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5594"
+         y="854.70551"
+         x="500.47455"
+         style="font-size:7px">Ru95</text>
+      <text
+         id="text5596"
+         y="869.70551"
+         x="502.47455"
+         style="font-size:5px">1.64 h</text>
+      <rect
+         id="rect5598"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5600"
+         y="822.70551"
+         x="468.47455"
+         style="font-size:7px">Rh95</text>
+      <text
+         id="text5602"
+         y="837.70551"
+         x="470.47455"
+         style="font-size:5px">5.02 m</text>
+      <rect
+         id="rect5604"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5606"
+         y="790.70551"
+         x="436.47455"
+         style="font-size:7px">Pd95</text>
+      <text
+         id="text5608"
+         y="805.70551"
+         x="440.47455"
+         style="font-size:5px">10 s</text>
+      <rect
+         id="rect5610"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="400.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5612"
+         y="758.70551"
+         x="404.47455"
+         style="font-size:7px">Ag95</text>
+      <text
+         id="text5614"
+         y="773.70551"
+         x="406.47455"
+         style="font-size:5px">1.74 s</text>
+      <rect
+         id="rect5616"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="368.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5618"
+         y="726.70551"
+         x="372.47455"
+         style="font-size:7px">Cd95</text>
+      <text
+         id="text5620"
+         y="741.70551"
+         x="376.47455"
+         style="font-size:5px">5 ms</text>
+      <rect
+         id="rect5672"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="528.47455"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5674"
+         y="854.70551"
+         x="532.47455"
+         style="font-size:7px;fill:#ffffff">Ru96</text>
+      <rect
+         id="rect5676"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5678"
+         y="822.70551"
+         x="500.47455"
+         style="font-size:7px">Rh96</text>
+      <text
+         id="text5680"
+         y="837.70551"
+         x="502.47455"
+         style="font-size:5px">9.90 m</text>
+      <rect
+         id="rect5682"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5684"
+         y="790.70551"
+         x="468.47455"
+         style="font-size:7px">Pd96</text>
+      <text
+         id="text5686"
+         y="805.70551"
+         x="471.47455"
+         style="font-size:5px">122 s</text>
+      <rect
+         id="rect5688"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5690"
+         y="758.70551"
+         x="436.47455"
+         style="font-size:7px">Ag96</text>
+      <text
+         id="text5692"
+         y="773.70551"
+         x="438.47455"
+         style="font-size:5px">4.45 s</text>
+      <rect
+         id="rect5694"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="400.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5696"
+         y="726.70551"
+         x="404.47455"
+         style="font-size:7px">Cd96</text>
+      <text
+         id="text5698"
+         y="741.70551"
+         x="409.47455"
+         style="font-size:5px">1 s</text>
+      <rect
+         id="rect5752"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5754"
+         y="854.70551"
+         x="564.47455"
+         style="font-size:7px">Ru97</text>
+      <text
+         id="text5756"
+         y="869.70551"
+         x="567.47455"
+         style="font-size:5px">2.9 d</text>
+      <rect
+         id="rect5758"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5760"
+         y="822.70551"
+         x="532.47455"
+         style="font-size:7px">Rh97</text>
+      <text
+         id="text5762"
+         y="837.70551"
+         x="534.47455"
+         style="font-size:5px">30.7 m</text>
+      <rect
+         id="rect5764"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5766"
+         y="790.70551"
+         x="500.47455"
+         style="font-size:7px">Pd97</text>
+      <text
+         id="text5768"
+         y="805.70551"
+         x="502.47455"
+         style="font-size:5px">3.10 m</text>
+      <rect
+         id="rect5770"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5772"
+         y="758.70551"
+         x="468.47455"
+         style="font-size:7px">Ag97</text>
+      <text
+         id="text5774"
+         y="773.70551"
+         x="470.47455"
+         style="font-size:5px">25.3 s</text>
+      <rect
+         id="rect5776"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5778"
+         y="726.70551"
+         x="436.47455"
+         style="font-size:7px">Cd97</text>
+      <text
+         id="text5780"
+         y="741.70551"
+         x="439.47455"
+         style="font-size:5px">2.8 s</text>
+      <rect
+         id="rect5782"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="400.47455"
+         style="fill:#ffa425;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5784"
+         y="694.70544"
+         x="404.47455"
+         style="font-size:7px">In97</text>
+      <text
+         id="text5786"
+         y="709.70551"
+         x="408.47455"
+         style="font-size:5px">5 ms</text>
+      <rect
+         id="rect5834"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="592.47455"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5836"
+         y="854.70551"
+         x="596.47455"
+         style="font-size:7px;fill:#ffffff">Ru98</text>
+      <rect
+         id="rect5838"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5840"
+         y="822.70551"
+         x="564.47455"
+         style="font-size:7px">Rh98</text>
+      <text
+         id="text5842"
+         y="837.70551"
+         x="566.47455"
+         style="font-size:5px">8.72 m</text>
+      <rect
+         id="rect5844"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5846"
+         y="790.70551"
+         x="532.47455"
+         style="font-size:7px">Pd98</text>
+      <text
+         id="text5848"
+         y="805.70551"
+         x="534.47455"
+         style="font-size:5px">17.7 m</text>
+      <rect
+         id="rect5850"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5852"
+         y="758.70551"
+         x="500.47455"
+         style="font-size:7px">Ag98</text>
+      <text
+         id="text5854"
+         y="773.70551"
+         x="502.47455"
+         style="font-size:5px">47.5 s</text>
+      <rect
+         id="rect5856"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5858"
+         y="726.70551"
+         x="468.47455"
+         style="font-size:7px">Cd98</text>
+      <text
+         id="text5860"
+         y="741.70551"
+         x="471.47455"
+         style="font-size:5px">9.2 s</text>
+      <rect
+         id="rect5862"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5864"
+         y="694.70544"
+         x="436.47455"
+         style="font-size:7px">In98</text>
+      <text
+         id="text5866"
+         y="709.70551"
+         x="439.47455"
+         style="font-size:5px">45 ms</text>
+      <rect
+         id="rect5916"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="624.47455"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5918"
+         y="854.70551"
+         x="628.47455"
+         style="font-size:7px;fill:#ffffff">Ru99</text>
+      <rect
+         id="rect5920"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5922"
+         y="822.70551"
+         x="596.47455"
+         style="font-size:7px">Rh99</text>
+      <text
+         id="text5924"
+         y="837.70551"
+         x="598.47455"
+         style="font-size:5px">16.1 d</text>
+      <rect
+         id="rect5926"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5928"
+         y="790.70551"
+         x="564.47455"
+         style="font-size:7px">Pd99</text>
+      <text
+         id="text5930"
+         y="805.70551"
+         x="566.47455"
+         style="font-size:5px">21.4 m</text>
+      <rect
+         id="rect5932"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5934"
+         y="758.70551"
+         x="532.47455"
+         style="font-size:7px">Ag99</text>
+      <text
+         id="text5936"
+         y="773.70551"
+         x="535.47455"
+         style="font-size:5px">124 s</text>
+      <rect
+         id="rect5938"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5940"
+         y="726.70551"
+         x="500.47455"
+         style="font-size:7px">Cd99</text>
+      <text
+         id="text5942"
+         y="741.70551"
+         x="504.47455"
+         style="font-size:5px">16 s</text>
+      <rect
+         id="rect5944"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5946"
+         y="694.70544"
+         x="468.47455"
+         style="font-size:7px">In99</text>
+      <text
+         id="text5948"
+         y="709.70551"
+         x="471.47455"
+         style="font-size:5px">3.1 s</text>
+      <rect
+         id="rect5950"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="432.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text5952"
+         y="662.70544"
+         x="436.47455"
+         style="font-size:7px">Sn99</text>
+      <text
+         id="text5954"
+         y="677.70544"
+         x="440.47455"
+         style="font-size:5px">5 ms</text>
+      <rect
+         id="rect6002"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="656.47455"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6004"
+         y="854.70551"
+         x="660.47455"
+         style="font-size:7px;fill:#ffffff">Ru100</text>
+      <rect
+         id="rect6006"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6008"
+         y="822.70551"
+         x="628.47455"
+         style="font-size:7px">Rh100</text>
+      <text
+         id="text6010"
+         y="837.70551"
+         x="630.47455"
+         style="font-size:5px">20.8 h</text>
+      <rect
+         id="rect6012"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6014"
+         y="790.70551"
+         x="596.47455"
+         style="font-size:7px">Pd100</text>
+      <text
+         id="text6016"
+         y="805.70551"
+         x="598.47455"
+         style="font-size:5px">3.63 d</text>
+      <rect
+         id="rect6018"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6020"
+         y="758.70551"
+         x="564.47455"
+         style="font-size:7px">Ag100</text>
+      <text
+         id="text6022"
+         y="773.70551"
+         x="566.47455"
+         style="font-size:5px">2.01 m</text>
+      <rect
+         id="rect6024"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6026"
+         y="726.70551"
+         x="532.47455"
+         style="font-size:7px">Cd100</text>
+      <text
+         id="text6028"
+         y="741.70551"
+         x="534.47455"
+         style="font-size:5px">49.1 s</text>
+      <rect
+         id="rect6030"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6032"
+         y="694.70544"
+         x="500.47455"
+         style="font-size:7px">In100</text>
+      <text
+         id="text6034"
+         y="709.70551"
+         x="503.47455"
+         style="font-size:5px">5.9 s</text>
+      <rect
+         id="rect6036"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="464.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6038"
+         y="662.70544"
+         x="468.47455"
+         style="font-size:7px">Sn100</text>
+      <text
+         id="text6040"
+         y="677.70544"
+         x="471.47455"
+         style="font-size:5px">1.1 s</text>
+      <rect
+         id="rect6084"
+         height="30"
+         width="30"
+         y="844.70551"
+         x="688.47455"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6086"
+         y="854.70551"
+         x="692.47455"
+         style="font-size:7px;fill:#ffffff">Ru101</text>
+      <rect
+         id="rect6088"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6090"
+         y="822.70551"
+         x="660.47455"
+         style="font-size:7px">Rh101</text>
+      <text
+         id="text6092"
+         y="837.70551"
+         x="663.47455"
+         style="font-size:5px">3.3 y</text>
+      <rect
+         id="rect6094"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6096"
+         y="790.70551"
+         x="628.47455"
+         style="font-size:7px">Pd101</text>
+      <text
+         id="text6098"
+         y="805.70551"
+         x="630.47455"
+         style="font-size:5px">8.47 h</text>
+      <rect
+         id="rect6100"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6102"
+         y="758.70551"
+         x="596.47455"
+         style="font-size:7px">Ag101</text>
+      <text
+         id="text6104"
+         y="773.70551"
+         x="598.47455"
+         style="font-size:5px">11.1 m</text>
+      <rect
+         id="rect6106"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6108"
+         y="726.70551"
+         x="564.47455"
+         style="font-size:7px">Cd101</text>
+      <text
+         id="text6110"
+         y="741.70551"
+         x="566.47455"
+         style="font-size:5px">1.36 m</text>
+      <rect
+         id="rect6112"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6114"
+         y="694.70544"
+         x="532.47455"
+         style="font-size:7px">In101</text>
+      <text
+         id="text6116"
+         y="709.70551"
+         x="534.47455"
+         style="font-size:5px">15.1 s</text>
+      <rect
+         id="rect6118"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="496.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6120"
+         y="662.70544"
+         x="500.47455"
+         style="font-size:7px">Sn101</text>
+      <text
+         id="text6122"
+         y="677.70544"
+         x="505.47455"
+         style="font-size:5px">3 s</text>
+      <rect
+         id="rect6170"
+         height="30"
+         width="30"
+         y="812.70551"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6172"
+         y="822.70551"
+         x="692.47455"
+         style="font-size:7px">Rh102</text>
+      <text
+         id="text6174"
+         y="837.70551"
+         x="693.47455"
+         style="font-size:5px">207.0 d</text>
+      <rect
+         id="rect6176"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="656.47455"
+         style="fill:#000000;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6178"
+         y="790.70551"
+         x="660.47455"
+         style="font-size:7px;fill:#ffffff">Pd102</text>
+      <rect
+         id="rect6180"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6182"
+         y="758.70551"
+         x="628.47455"
+         style="font-size:7px">Ag102</text>
+      <text
+         id="text6184"
+         y="773.70551"
+         x="630.47455"
+         style="font-size:5px">12.9 m</text>
+      <rect
+         id="rect6186"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6188"
+         y="726.70551"
+         x="596.47455"
+         style="font-size:7px">Cd102</text>
+      <text
+         id="text6190"
+         y="741.70551"
+         x="599.47455"
+         style="font-size:5px">5.5 m</text>
+      <rect
+         id="rect6192"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6194"
+         y="694.70544"
+         x="564.47455"
+         style="font-size:7px">In102</text>
+      <text
+         id="text6196"
+         y="709.70551"
+         x="566.47455"
+         style="font-size:5px">23.3 s</text>
+      <rect
+         id="rect6198"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6200"
+         y="662.70544"
+         x="532.47455"
+         style="font-size:7px">Sn102</text>
+      <text
+         id="text6202"
+         y="677.70544"
+         x="535.47455"
+         style="font-size:5px">4.6 s</text>
+      <rect
+         id="rect6250"
+         height="30"
+         width="30"
+         y="780.70551"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6252"
+         y="790.70551"
+         x="692.47455"
+         style="font-size:7px">Pd103</text>
+      <text
+         id="text6254"
+         y="805.70551"
+         x="693.47455"
+         style="font-size:5px">16.99 d</text>
+      <rect
+         id="rect6256"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6258"
+         y="758.70551"
+         x="660.47455"
+         style="font-size:7px">Ag103</text>
+      <text
+         id="text6260"
+         y="773.70551"
+         x="662.47455"
+         style="font-size:5px">65.7 m</text>
+      <rect
+         id="rect6262"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6264"
+         y="726.70551"
+         x="628.47455"
+         style="font-size:7px">Cd103</text>
+      <text
+         id="text6266"
+         y="741.70551"
+         x="631.47455"
+         style="font-size:5px">7.3 m</text>
+      <rect
+         id="rect6268"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6270"
+         y="694.70544"
+         x="596.47455"
+         style="font-size:7px">In103</text>
+      <text
+         id="text6272"
+         y="709.70551"
+         x="600.47455"
+         style="font-size:5px">60 s</text>
+      <rect
+         id="rect6274"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6276"
+         y="662.70544"
+         x="564.47455"
+         style="font-size:7px">Sn103</text>
+      <text
+         id="text6278"
+         y="677.70544"
+         x="569.47455"
+         style="font-size:5px">7 s</text>
+      <rect
+         id="rect6280"
+         height="30"
+         width="30"
+         y="620.70544"
+         x="528.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6282"
+         y="630.70544"
+         x="532.47455"
+         style="font-size:7px">Sb103</text>
+      <text
+         id="text6284"
+         y="645.70544"
+         x="534.47455"
+         style="font-size:5px">100 ms</text>
+      <rect
+         id="rect6336"
+         height="30"
+         width="30"
+         y="748.70551"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6338"
+         y="758.70551"
+         x="692.47455"
+         style="font-size:7px">Ag104</text>
+      <text
+         id="text6340"
+         y="773.70551"
+         x="694.47455"
+         style="font-size:5px">69.2 m</text>
+      <rect
+         id="rect6342"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6344"
+         y="726.70551"
+         x="660.47455"
+         style="font-size:7px">Cd104</text>
+      <text
+         id="text6346"
+         y="741.70551"
+         x="662.47455"
+         style="font-size:5px">57.7 m</text>
+      <rect
+         id="rect6348"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6350"
+         y="694.70544"
+         x="628.47455"
+         style="font-size:7px">In104</text>
+      <text
+         id="text6352"
+         y="709.70551"
+         x="630.47455"
+         style="font-size:5px">1.80 m</text>
+      <rect
+         id="rect6354"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6356"
+         y="662.70544"
+         x="596.47455"
+         style="font-size:7px">Sn104</text>
+      <text
+         id="text6358"
+         y="677.70544"
+         x="598.47455"
+         style="font-size:5px">20.8 s</text>
+      <rect
+         id="rect6360"
+         height="30"
+         width="30"
+         y="620.70544"
+         x="560.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6362"
+         y="630.70544"
+         x="564.47455"
+         style="font-size:7px">Sb104</text>
+      <text
+         id="text6364"
+         y="645.70544"
+         x="566.47455"
+         style="font-size:5px">470 ms</text>
+      <rect
+         id="rect6424"
+         height="30"
+         width="30"
+         y="716.70551"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6426"
+         y="726.70551"
+         x="692.47455"
+         style="font-size:7px">Cd105</text>
+      <text
+         id="text6428"
+         y="741.70551"
+         x="694.47455"
+         style="font-size:5px">55.5 m</text>
+      <rect
+         id="rect6430"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6432"
+         y="694.70544"
+         x="660.47455"
+         style="font-size:7px">In105</text>
+      <text
+         id="text6434"
+         y="709.70551"
+         x="662.47455"
+         style="font-size:5px">5.07 m</text>
+      <rect
+         id="rect6436"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6438"
+         y="662.70544"
+         x="628.47455"
+         style="font-size:7px">Sn105</text>
+      <text
+         id="text6440"
+         y="677.70544"
+         x="632.47455"
+         style="font-size:5px">34 s</text>
+      <rect
+         id="rect6442"
+         height="30"
+         width="30"
+         y="620.70544"
+         x="592.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6444"
+         y="630.70544"
+         x="596.47455"
+         style="font-size:7px">Sb105</text>
+      <text
+         id="text6446"
+         y="645.70544"
+         x="598.47455"
+         style="font-size:5px">1.12 s</text>
+      <rect
+         id="rect6448"
+         height="30"
+         width="30"
+         y="588.70544"
+         x="560.47455"
+         style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6450"
+         y="598.70544"
+         x="564.47455"
+         style="font-size:7px">Te105</text>
+      <text
+         id="text6452"
+         y="613.70544"
+         x="568.47455"
+         style="font-size:5px">1 us</text>
+      <rect
+         id="rect6510"
+         height="30"
+         width="30"
+         y="684.70544"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6512"
+         y="694.70544"
+         x="692.47455"
+         style="font-size:7px">In106</text>
+      <text
+         id="text6514"
+         y="709.70551"
+         x="695.47455"
+         style="font-size:5px">6.2 m</text>
+      <rect
+         id="rect6516"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6518"
+         y="662.70544"
+         x="660.47455"
+         style="font-size:7px">Sn106</text>
+      <text
+         id="text6520"
+         y="677.70544"
+         x="662.47455"
+         style="font-size:5px">1.92 m</text>
+      <rect
+         id="rect6522"
+         height="30"
+         width="30"
+         y="620.70544"
+         x="624.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6524"
+         y="630.70544"
+         x="628.47455"
+         style="font-size:7px">Sb106</text>
+      <text
+         id="text6526"
+         y="645.70544"
+         x="630.47455"
+         style="font-size:5px">600 ms</text>
+      <rect
+         id="rect6528"
+         height="30"
+         width="30"
+         y="588.70544"
+         x="592.47455"
+         style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6530"
+         y="598.70544"
+         x="596.47455"
+         style="font-size:7px">Te106</text>
+      <text
+         id="text6532"
+         y="613.70544"
+         x="599.47455"
+         style="font-size:5px">70 us</text>
+      <rect
+         id="rect6598"
+         height="30"
+         width="30"
+         y="652.70544"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6600"
+         y="662.70544"
+         x="692.47455"
+         style="font-size:7px">Sn107</text>
+      <text
+         id="text6602"
+         y="677.70544"
+         x="694.47455"
+         style="font-size:5px">2.90 m</text>
+      <rect
+         id="rect6604"
+         height="30"
+         width="30"
+         y="620.70544"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6606"
+         y="630.70544"
+         x="660.47455"
+         style="font-size:7px">Sb107</text>
+      <text
+         id="text6608"
+         y="645.70544"
+         x="663.47455"
+         style="font-size:5px">4.6 s</text>
+      <rect
+         id="rect6610"
+         height="30"
+         width="30"
+         y="588.70544"
+         x="624.47455"
+         style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6612"
+         y="598.70544"
+         x="628.47455"
+         style="font-size:7px">Te107</text>
+      <text
+         id="text6614"
+         y="613.70544"
+         x="630.47455"
+         style="font-size:5px">3.1 ms</text>
+      <rect
+         id="rect6684"
+         height="30"
+         width="30"
+         y="620.70544"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6686"
+         y="630.70544"
+         x="692.47455"
+         style="font-size:7px">Sb108</text>
+      <text
+         id="text6688"
+         y="645.70544"
+         x="695.47455"
+         style="font-size:5px">7.4 s</text>
+      <rect
+         id="rect6690"
+         height="30"
+         width="30"
+         y="588.70544"
+         x="656.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6692"
+         y="598.70544"
+         x="660.47455"
+         style="font-size:7px">Te108</text>
+      <text
+         id="text6694"
+         y="613.70544"
+         x="663.47455"
+         style="font-size:5px">2.1 s</text>
+      <rect
+         id="rect6696"
+         height="30"
+         width="30"
+         y="556.70544"
+         x="624.47455"
+         style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6698"
+         y="566.70544"
+         x="632.47455"
+         style="font-size:7px">I108</text>
+      <text
+         id="text6700"
+         y="581.70544"
+         x="631.47455"
+         style="font-size:5px">36 ms</text>
+      <rect
+         id="rect6772"
+         height="30"
+         width="30"
+         y="588.70544"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6774"
+         y="598.70544"
+         x="692.47455"
+         style="font-size:7px">Te109</text>
+      <text
+         id="text6776"
+         y="613.70544"
+         x="695.47455"
+         style="font-size:5px">4.6 s</text>
+      <rect
+         id="rect6778"
+         height="30"
+         width="30"
+         y="556.70544"
+         x="656.47455"
+         style="fill:#ffa425;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6780"
+         y="566.70544"
+         x="664.47455"
+         style="font-size:7px">I109</text>
+      <text
+         id="text6782"
+         y="581.70544"
+         x="662.47455"
+         style="font-size:5px">103 us</text>
+      <rect
+         id="rect6858"
+         height="30"
+         width="30"
+         y="556.70544"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6860"
+         y="566.70544"
+         x="696.47455"
+         style="font-size:7px">I110</text>
+      <text
+         id="text6862"
+         y="581.70544"
+         x="694.47455"
+         style="font-size:5px">650 ms</text>
+      <rect
+         id="rect6864"
+         height="30"
+         width="30"
+         y="524.70544"
+         x="656.47455"
+         style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6866"
+         y="534.70544"
+         x="660.47455"
+         style="font-size:7px">Xe110</text>
+      <text
+         id="text6868"
+         y="549.70544"
+         x="662.47455"
+         style="font-size:5px">310 ms</text>
+      <rect
+         id="rect6946"
+         height="30"
+         width="30"
+         y="524.70544"
+         x="688.47455"
+         style="fill:#ff7e75;stroke:#000000;stroke-width:1" />
+      <text
+         id="text6948"
+         y="534.70544"
+         x="692.47455"
+         style="font-size:7px">Xe111</text>
+      <text
+         id="text6950"
+         y="549.70544"
+         x="694.47455"
+         style="font-size:5px">740 ms</text>
+      <rect
+         id="rect7032"
+         height="30"
+         width="30"
+         y="492.70547"
+         x="688.47455"
+         style="fill:#ffa425;stroke:#000000;stroke-width:1" />
+      <text
+         id="text7034"
+         y="502.70547"
+         x="692.47455"
+         style="font-size:7px">Cs112</text>
+      <text
+         id="text7036"
+         y="517.70544"
+         x="694.47455"
+         style="font-size:5px">500 us</text>
+      <rect
+         style="fill:#fffe49;stroke:#000000;stroke-width:1"
+         x="528.33167"
+         y="588.70544"
+         width="30"
+         height="30"
+         id="rect33247" />
+      <rect
+         id="rect33249"
+         height="30"
+         width="30"
+         y="524.70544"
+         x="624.47455"
+         style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+      <text
+         style="font-size:7px"
+         x="628.68884"
+         y="534.70544"
+         id="text33251">Xe109</text>
+      <text
+         style="font-size:7px"
+         x="533.76025"
+         y="598.70544"
+         id="text33253">Te104</text>
+      <g
+         id="g33259">
+        <rect
+           id="rect33255"
+           height="30"
+           width="30"
+           y="524.70544"
+           x="592.47455"
+           style="fill:#fffe49;stroke:#000000;stroke-width:1" />
+        <text
+           style="font-size:7px"
+           x="595.11743"
+           y="534.70544"
+           id="text33257">Xe108</text>
+      </g>
+      <text
+         style="font-size:5px"
+         x="631.47455"
+         y="550.39069"
+         id="text35213">13 ms</text>
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect32735"
+       width="286.71429"
+       height="31.471701"
+       x="432.85715"
+       y="651.6048" />
+    <rect
+       y="-495.16443"
+       x="651.48352"
+       height="31.471701"
+       width="222.9064"
+       id="rect33245"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <rect
+       id="rect5616-8"
+       height="30"
+       width="30"
+       y="748.45856"
+       x="336.02802"
+       style="fill:none;stroke:#0000ff;stroke-width:1.50000000000000000;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:none;stroke:#0000ff;stroke-width:1.50000000000000000;stroke-miterlimit:4;stroke-dasharray:none"
+       x="272.3884"
+       y="812.60327"
+       width="30"
+       height="30"
+       id="rect35233" />
+    <rect
+       style="fill:none;stroke:#0000ff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="592.47455"
+       y="524.70544"
+       width="30"
+       height="30"
+       id="rect35235" />
+    <rect
+       id="rect35237"
+       height="30"
+       width="30"
+       y="588.70544"
+       x="528.33167"
+       style="fill:none;stroke:#0000ff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:none;stroke:#0000ff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="496.47455"
+       y="652.70544"
+       width="30"
+       height="30"
+       id="rect35239" />
+    <rect
+       id="rect35241"
+       height="30"
+       width="30"
+       y="588.70544"
+       x="560.47455"
+       style="fill:none;stroke:#0000ff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
+    <rect
+       style="fill:none;stroke:#0000ff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
+       x="624.47455"
+       y="524.70544"
+       width="30"
+       height="30"
+       id="rect35243" />
+    <rect
+       id="rect35245"
+       height="30"
+       width="30"
+       y="652.70544"
+       x="464.47455"
+       style="fill:none;stroke:#0000ff;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none" />
+    <g
+       transform="translate(68.690373,-16.414979)"
+       id="g35193">
+      <path
+         inkscape:connector-curvature="0"
+         id="path35195"
+         d="m 525.68917,569.65016 -33.80159,32.73005"
+         style="fill:#fff300;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send)" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#ffff00;stroke-width:0.98565054px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend27)"
+         d="m 525.1841,570.15524 -33.80159,32.73005"
+         id="path35197"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       id="g35199"
+       transform="translate(100.51018,-15.909903)">
+      <path
+         style="fill:#fff300;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send)"
+         d="m 525.68917,569.65016 -33.80159,32.73005"
+         id="path35201"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path35203"
+         d="m 525.1841,570.15524 -33.80159,32.73005"
+         style="fill:#000000;fill-opacity:1;stroke:#ffff00;stroke-width:0.98565054px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend27)" />
+    </g>
+    <g
+       id="g35189"
+       transform="translate(4.0406102,47.47717)">
+      <path
+         style="fill:#fff300;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send)"
+         d="m 525.68917,569.65016 -33.80159,32.73005"
+         id="path33713"
+         inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path33711"
+         d="m 525.1841,570.15524 -33.80159,32.73005"
+         style="fill:#000000;fill-opacity:1;stroke:#ffff00;stroke-width:0.98565054px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend27)" />
+    </g>
+    <g
+       transform="translate(36.112955,47.982246)"
+       id="g35205">
+      <path
+         inkscape:connector-curvature="0"
+         id="path35207"
+         d="m 525.68917,569.65016 -33.80159,32.73005"
+         style="fill:#fff300;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send)" />
+      <path
+         style="fill:#000000;fill-opacity:1;stroke:#ffff00;stroke-width:0.98565054px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend27)"
+         d="m 525.1841,570.15524 -33.80159,32.73005"
+         id="path35209"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
