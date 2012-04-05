@@ -1,6 +1,9 @@
 /*
- * Krzysztof Miernik
- * k.a.miernik@gmail.com
+ * Copyright Krzysztof Miernik 2012
+ * k.a.miernik@gmail.com 
+ *
+ * Distributed under GNU General Public Licence v3
+ * Based on chartDrawer, prints table of Masses (or Sn, Sp, etc.)
  */
 
 #include <iostream>

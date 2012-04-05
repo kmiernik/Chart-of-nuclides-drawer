@@ -1,6 +1,8 @@
 /*
- * Krzysztof Miernik 22.08.2011
- * k.a.miernik@gmail.com
+ * Copyright Krzysztof Miernik 2012
+ * k.a.miernik@gmail.com 
+ *
+ * Distributed under GNU General Public Licence v3
  */
 
 #include <iostream>
