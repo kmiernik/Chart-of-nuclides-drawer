@@ -3,6 +3,10 @@
  * k.a.miernik@gmail.com 
  *
  * Distributed under GNU General Public Licence v3
+ *
+ *
+ * Edited: S.V. Paulauskas; 07 April 2012
+ * Added the ability to cut on z or n when plotting.
  */
 
 #include <iostream>
@@ -11,6 +15,9 @@
 #include <cstdlib>
 #include <fstream>
 #include <vector>
+
+#include "unistd.h"
+
 #include "nuclide.h"
 
 using namespace std;
@@ -194,7 +201,40 @@ void process(Nuclide& t, const string& line) {
         t.primaryDecayMode = unknown;
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+
+   //Some quick and dirty stuff to handle arguments for the 
+   //cuts on N and Z.  Right now only cut on one at a time. -SVP
+   bool nCut = false, zCut = false;
+   vector<int> range;
+   int option;
+   
+   while (( option = getopt(argc, argv, "zn") ) != -1) {
+      switch(option) {
+      case 'n':
+	 nCut = true;
+	 break;
+      case 'z':
+	 zCut = true;
+	 break;
+      }
+   }
+
+   if(argc > 1) {
+      for(int i = optind; i < argc; i++)
+	 range.push_back(atoi(argv[i]));
+      
+      if(range.size() != 2) {
+	 cout << "Not enough arguments for the range" << endl;
+	 exit(2);
+      } else if(range[0] > range[1]) {
+	 int temp0 = range[1];
+	 int temp1 = range[0];
+	 range[0] = temp1;
+	 range[1] = temp0;
+      }
+   }
+      
     ifstream nuFile("nubtab03.asc");
     // svg file header
     cout <<  "  <!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"> " 
@@ -207,6 +247,15 @@ int main() {
             if (line[0] != '#' && line[7] == '0') { //comment line & not isomer (which has [7] > 0)
                 Nuclide t;
                 process(t, line);
+		
+		//Quick and dirty way to only plot the range wanted. -SVP
+		if(argc > 1) {
+		   if(zCut && (t.Z < range[0] || t.Z > range[1]))
+		      continue;
+		   else if(nCut && (t.N < range[0] || t.N > range[1]))
+		      continue;
+		}
+
                 unsigned x = t.N * 32;
                 unsigned y = 4000 - (t.Z + 1) * 32;
                 string rectStyle = "";
