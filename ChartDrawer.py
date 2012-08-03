@@ -147,49 +147,6 @@ def load_xml_nuclear_table(datafile, n_range, z_range,
             return False
     return data
 
-#def load_data(datafile):
-#    """ Loads data from xml document in format as described in nubase2xml.py
-#        returns list of dictionaries, where each dictionary is for
-#        separate nuclid entry """
-#
-#    try:
-#        dom = xml.dom.minidom.parse(datafile)
-#    except (EnvironmentError, xml.parsers.expat.ExpatError) as err:
-#        print("{0}: import error: {1}".format(datafile, err))
-#        return False
-#
-#    data = []
-#    for nuclide in dom.getElementsByTagName("nuclide"):
-#        nuclide_data = {}
-#        try:
-#            nuclide_data['A'] = int(nuclide.getAttribute('A'))
-#            nuclide_data['Z'] = int(nuclide.getAttribute('Z'))
-#            nuclide_data['id'] = nuclide.getAttribute('id')
-#            nuclide_data['element'] = nuclide.getAttribute('element')
-#            
-#            half_life = nuclide.getElementsByTagName("half_life")[0]
-#            hl_value = half_life.getAttribute('value')
-#            hl_unit = half_life.getAttribute('unit')
-#            hl_extrapolation = half_life.getAttribute('extrapolation')
-#
-#            nuclide_data['half_life'] = [hl_value, hl_unit, hl_extrapolation]
-#
-#            decay_modes = nuclide.getElementsByTagName("decay_modes")[0]
-#            nuclide_decay_modes = []
-#            for decay in decay_modes.getElementsByTagName("decay"):
-#                mode = decay.getAttribute("mode")
-#                relation = decay.getAttribute("relation")
-#                value = decay.getAttribute("value")
-#                nuclide_decay_modes.append([mode, relation, value])
-#
-#            nuclide_data['decay_modes'] = nuclide_decay_modes
-#
-#            data.append(nuclide_data)
-#
-#        except (ValueError, LookupError) as err:
-#            print("{0}: import error: {1}".format(datafile, err))
-#            return False
-#    return data
 
 def _draw_rectangle(layer, position, color, name):
     """Draws rectangle (basic nuclide on map) position is
@@ -563,13 +520,17 @@ if __name__ == "__main__":
    
     # Size of picture is now calculated, and proper attributes
     # are assigned to root element
+    # Additional margins are added to provide space for numbers on the 
+    # left and bottom
     size = [(n_limits[1] - n_limits[0] + 2) * SIZE_FIELD + SIZE_GAP,
             (z_limits[1] - z_limits[0] + 2) * SIZE_FIELD + SIZE_GAP]
     root.setAttribute("width", str(size[0]))
     root.setAttribute("height", str(size[1]))
 
-    n_magic = {}
-    z_magic = {}
+    # This variable is used to draw numbers next to last 
+    # first element in Z rows, and below first element in N column
+    #
+    # Could be used instead of n_magic and z_magic?
     shape = []
     for n in range(n_limits[0], n_limits[1] + 1):
         n_list = []
@@ -577,6 +538,8 @@ if __name__ == "__main__":
             n_list.append(False)
         shape.append(n_list)
 
+    n_magic = {}
+    z_magic = {}
     for nuclide in data:
         N = nuclide.N
         Z = nuclide.Z
@@ -595,7 +558,7 @@ if __name__ == "__main__":
 
         shape[N - n_limits[0]][Z - z_limits[0]] = True
 
-        # Upper left corner of square
+        # Position is passed for upper left corner of square
         x = (N - n_limits[0] + 1) * SIZE_FIELD + SIZE_GAP
         y = size[1] - (Z - z_limits[0] + 2) * SIZE_FIELD 
         draw_nuclide(nuclide, layers, [x, y], args)
