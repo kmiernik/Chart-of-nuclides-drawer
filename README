@@ -1,3 +1,59 @@
-Simple program to create chart of nuclides in svg using NNDC database file.
+This script produces chart of nuclides in svg format from data
+provided in xml document. The chart in svg format is especially suitable
+for all kinds of presentations or posters since the SVG graphics is scalable
+without loss of quality.
 
-Distributed under GPL v3.
+An example output is provided in example.svg file.
+
+    usage: ChartDrawer.py [-h] [--names] [--halflives] [--magic] [--numbers]
+                        [--z Z Z] [--n N N]
+                        datafile outfile
+
+    positional arguments:
+    datafile     Input data base XML file (required)
+    outfile      Output data SVG file (required)
+
+    optional arguments:
+    -h, --help   show this help message and exit
+    --names      Show names
+    --halflives  Show half-lives
+    --magic      Show magic numbers
+    --numbers    Show numbers along axis
+    --z Z Z      Atomic number Z range (int), default: [0, 120]
+    --n N N      Neutron number N range (int), default: [0, 180]
+
+The Nubase2xml.py script will generate the input xml file from Nubase format
+
+The NuBase ascii file can be downloaded from:
+http://amdc.in2p3.fr/nubase/nubtab03.asc
+
+Please note that the database is old (2003) so many values are outdated.
+As soon as expected NuBase2013 is released the Nubase2xml script will 
+be updated to parse new data format.
+
+The generated chart of nuclides is following (but not precisely) the format
+of Karlsruher Chart of Nuclides. The nuclides are coded with colors according to
+primary decay mode:
+Black - stable
+Yellow - Alpha
+Red - B+/EC
+Blue - B-
+Green - fission
+Orange - proton / two-proton emission
+Violet - cluster emission
+Light blue - neutron / two-neutron emission
+
+Secondary decay mode is indicated by triangle. A large triangle is used if
+secondary decay mode branching is larger then 5%. Otherwise small triangle is
+used (likewise for tertiary decay mode).
+
+A Nuclide class provides parser to read data from NuBase ascii file or xml
+document. Note that some informations are not being used on the chart 
+(e.g. mass of nuclides, isomeric states), but are present in the data base.
+The Nuclide class can easily used to write scripts using these informations 
+as well.
+
+Copyright Krzysztof Miernik 2012
+k.a.miernik@gmail.com 
+
+Distributed under GNU General Public Licence v3
