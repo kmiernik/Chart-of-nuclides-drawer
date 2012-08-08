@@ -75,7 +75,8 @@ COLORS = { 'IS': '#000000',
            'n' : '#9fd7ff',
            '2n': '#9fd7ff',
            'IT': '#ffffff',
-           'cluster': '#a564cc' }
+           'cluster': '#a564cc',
+           '?': '#cccccc' }
 
 FONT_COLOR_DARK = '#000000'
 FONT_COLOR_BRIGHT = '#aaaaaa'
@@ -276,9 +277,11 @@ def draw_nuclide(nuclide, layers, position, args):
     """ Draws nuclide data, including primary and secondary decay modes,
         and name of nuclide """
 
+    # List of accepted basic decay modes, primary color is chosen on 
+    # that basis. A '?' mode is for placeholders.
     basic_decay_modes = ['IS', 'A', 'B-', 'B+',
                            'EC', 'p', '2p', 'SF', 
-                           'n', '2n']
+                           'n', '2n', '?']
     # This reg ex. matches cluster emission marked by isotopic name
     # it matches names starting by at least one number and
     # ending with at least one capital letter and zero or one lower letter
@@ -432,26 +435,26 @@ def draw_magic_lines(layers, n_magic, z_magic,
 
 def draw_numbers(layers, shape, n_limits, z_limits, size):
     # Start from 1 so we want print N = 0 number
-    for n in range(1, n_limits[1] - n_limits[0] + 1):
+    for n in range(0, n_limits[1] - n_limits[0] + 1):
         if (n + n_limits[0]) % 2 == 0:
             z_first = 0
             while ( not(shape[n][z_first]) and 
                     z_first < z_limits[1] - z_limits[0] + 1 ):
                 z_first += 1
-            x = (n - n_limits[0] + 1) * SIZE_FIELD + SIZE_GAP + SIZE_SHAPE / 2 
-            y = size[1] - (z_first - z_limits[0] + 1) * SIZE_FIELD + SIZE_GAP + 1.25 * SIZE_FONT
+            x = (n + 1) * SIZE_FIELD + SIZE_GAP + SIZE_SHAPE / 2 
+            y = size[1] - (z_first + 1) * SIZE_FIELD + SIZE_GAP + 1.25 * SIZE_FONT
             _draw_text(layers[3], [x, y], '#000000', 
-                       SIZE_FONT * 1.5, str(n))
-    for z in range(1, z_limits[1] - z_limits[0] + 1):
+                       SIZE_FONT * 1.5, str(n + n_limits[0]))
+    for z in range(0, z_limits[1] - z_limits[0] + 1):
         if (z + z_limits[0] % 2) % 2 == 0:
             n_first = 0
             while ( not(shape[n_first][z]) and 
                     n_first < n_limits[1] - n_limits[0] + 1 ):
                 n_first += 1
-            x = (n_first - n_limits[0]) * SIZE_FIELD + SIZE_SHAPE / 2 + 3 * SIZE_GAP
-            y = size[1] - (z - z_limits[0] + 2) * SIZE_FIELD + SIZE_SHAPE / 2 +2 * SIZE_GAP
+            x = (n_first) * SIZE_FIELD + SIZE_SHAPE / 2 + 3 * SIZE_GAP
+            y = size[1] - (z + 2) * SIZE_FIELD + SIZE_SHAPE / 2 +2 * SIZE_GAP
             _draw_text(layers[3], [x, y], '#000000', 
-                       SIZE_FONT * 1.5, str(z))
+                       SIZE_FONT * 1.5, str(z + z_limits[0]))
 
 
 if __name__ == "__main__":
