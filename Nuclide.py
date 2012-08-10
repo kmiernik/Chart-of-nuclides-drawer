@@ -15,6 +15,7 @@ class ParameterError(Exception):
     """Error class for all kinds of wrong parameters passed to 
     all functions and classes in this module"""
     def __init__(self, msg):
+        super().__init__()
         self.msg = msg
     def __str__(self):
         return repr(self.msg)
@@ -47,8 +48,8 @@ class Nuclide(object):
                         'zs': 1e-21,
                         'ys': 1e-24,
                         'stbl' : 'stable',
-                        'p-unst': 'p-unstable',
-                        'n-unst': 'n-unstable',
+                        'p-unst': 'unstable',
+                        'n-unst': 'unstable',
                         '?': 'unknown'}
 
     # Base unit for long times: year
@@ -78,7 +79,7 @@ class Nuclide(object):
               'Kr',  'Rb',  'Sr',   'Y',  'Zr',\
               'Nb',  'Mo',  'Tc',  'Ru',  'Rh',\
               'Pd',  'Ag',  'Cd',  'In',  'Sn',\
-              'Sb',  'Te',  ' I',  'Xe',  'Cs',\
+              'Sb',  'Te',   'I',  'Xe',  'Cs',\
               'Ba',  'La',  'Ce',  'Pr',  'Nd',\
               'Pm',  'Sm',  'Eu',  'Gd',  'Tb',\
               'Dy',  'Ho',  'Er',  'Tm',  'Yb',\
@@ -103,16 +104,19 @@ class Nuclide(object):
         parse_xml_entry function"""
 
         super().__init__()
+        self.Z = Z
+        self.A = A
         if source == 'nubase':
-            self.Z = Z
-            self.A = A
-            self.__mass_defect = self.__nb_parse_mass_defect(mass_defect)
-            self.__half_life = self.__nb_parse_half_life(half_life)
-            self.__gs_spin = self.__nb_parse_gs_spin(gs_spin)
-            self.__decay_modes = self.__nb_parse_decay_modes(decay_modes)
+            self.mass_defect = self.__nb_parse_mass_defect(mass_defect)
+            self.half_life = self.__nb_parse_half_life(half_life)
+            self.gs_spin = self.__nb_parse_gs_spin(gs_spin)
+            self.decay_modes = self.__nb_parse_decay_modes(decay_modes)
+        elif source == 'nwc':
+            self.mass_defect = mass_defect
+            self.half_life = self.nwc_parse_half_life(half_life)
+            self.gs_spin = gs_spin
+            self.__decay_modes = decay_modes
         else:
-            self.Z = Z
-            self.A = A
             if mass_defect != None:
                 self.mass_defect = mass_defect
             else:
@@ -128,7 +132,7 @@ class Nuclide(object):
             if decay_modes != None:
                 self.decay_modes = decay_modes
             else:
-                self.__decay_modes = None
+                self.__decay_modes = []
         self.comment = comment
         self.isomers = isomers
 
@@ -181,7 +185,7 @@ class Nuclide(object):
     @property
     def mass_defect(self):
         """Returns mass defect data in format:
-            [mass, uncertainity, extrapolated]
+            {value, uncertainity, extrapolated, ...}
             extrapolated is boolean
             """
         return self.__mass_defect
@@ -190,22 +194,23 @@ class Nuclide(object):
     def mass_defect(self, mass_defect):
         """Sets mass defect data, format 
         [mass, uncertainity, extrapolated] is expected"""
-        if len(mass_defect) != 3:
-            raise ParameterError('Mass defect is expected to be a list [mass, error, extrapolated]')
+        for key in ['value', 'uncertainity', 'extrapolated']:
+            if mass_defect.get(key) == None:
+                raise ParameterError("Wrong format of mass defect '{}' was passed".format(mass_defect))
         self.__mass_defect = mass_defect
 
     @property
     def half_life(self):
-        """Half-life is returned as a list [value, unit, uncertainity, extrapolated]"""
+        """Half-life is returned as a dictionary {value, unit, uncertainity, extrapolated, relation}"""
         return self.__half_life
-
 
     @half_life.setter
     def half_life(self, half_life):
-        """Sets half-life data, format 
-        [value, unit, uncertainity, extrapolated] is expected"""
-        if len(half_life) != 4:
-            raise ParameterError('Half life is expected to be a list [value, unit, uncertainity, extrapolated], {} was passed'.format(half_life))
+        """Sets half-life data, format dict
+        {value, unit, uncertainity, extrapolated, relation} is expected"""
+        for key in ['value', 'unit', 'uncertainity', 'relation', 'extrapolated']:
+            if half_life.get(key) == None:
+                raise ParameterError("Wrong format of half life '{}' was passed".format(half_life))
         self.__half_life = half_life
 
     @property
@@ -216,48 +221,58 @@ class Nuclide(object):
     @gs_spin.setter
     def gs_spin(self, gs_spin):
         """Sets g.s. spin, format
-        [value, extrapolated] is expected"""
-        if len(gs_spin) != 2:
-            raise ParameterError('Ground state spin is expected to be a list [value, extrapolated], {} was passed'.format(gs_spin))
+        {'value' : , 'extrapolated' : }
+        """
+        for key in ['value', 'extrapolated']:
+            if gs_spin.get(key) == None:
+                raise ParameterError("Wrong format of ground state spin '{}' was passed".format(gs_spin))
         self.__gs_spin = gs_spin
 
     @property
     def decay_modes(self):
-        """A list of decay modes and branching ratios, returns list:
-        [mode, relation, value, uncertainity]
+        """A list of decay modes and branching ratios, returns list of dictionaries
+        [ {'mode': , 'relation': , 'value' : , 'uncertainity': }, {}, ...]
         where decay mode is 'B-', 'A', etc, 
         relation is '=', '~', '>=' ,'<=' (greater equal, and less equal coded in unicode)
         and value is given in percent or by '?' if unknown"""
         return self.__decay_modes 
 
-
     @decay_modes.setter
     def decay_modes(self, decay_modes):
         """Sets decay_modes data"""
+        self.__decay_modes = []
         for mode in decay_modes:
-            if len(mode) != 4:
-                raise ParameterError('Decay modes is expected to be a list of lists [ [mode, relation, value, error], [mode, ...], ... ], {} was passed'.format(decay_modes))
-        self.__decay_modes = decay_modes
+            self.add_decay_mode(mode)
+
+    def add_decay_mode(self, decay_mode):
+        """Decay mode should be a dictionary:
+        {'mode': , 'relation': , 'value' : , 'uncertainity': }
+        """
+        for key in ['mode', 'relation', 'value', 'uncertainity']:
+            if decay_mode.get(key) == None:
+                raise ParameterError("Wrong format of decay mode '{}' was passed".format(decay_mode))
+        self.__decay_modes.append(decay_mode)
 
     def __nb_parse_mass_defect(self, mass_defect):
         """Returns list [mass, uncertainity, extrapolated]
         parsed from format used by nubase2003"""
+        result = {}
         mass_defect = mass_defect.strip()
-        extrapolated = True if mass_defect.count('#') > 0 else False
-        if extrapolated:
+        result['extrapolated'] = True if mass_defect.count('#') > 0 else False
+        if result['extrapolated']:
             mass_defect = mass_defect.replace('#', ' ')
         try:
             mass_defect = mass_defect.split()
             for it in mass_defect:
                 it = it.strip()
-            mass = float(mass_defect[0])
+            result['value'] = float(mass_defect[0])
             if len(mass_defect) == 2:
-                error = float(mass_defect[1])
+                result['uncertainity'] = float(mass_defect[1])
             else:
-                error = '?'
+                result['uncertainity'] = '?'
         except ValueError:
             raise ParameterError(" {} is not valid mass defect string".format(mass_defect))
-        return [mass, error, extrapolated]
+        return result
 
     def __nb_parse_half_life(self, half_life):
         """Half-life given as a string "value unit" white-space separated
@@ -269,9 +284,10 @@ class Nuclide(object):
 
            returns list [half life, unit, uncertainity, extrapolated]
         """
+        result = {}
         half_life = half_life.strip()
-        extrapolated = True if half_life.count('#') > 0 else False
-        if extrapolated:
+        result['extrapolated'] = True if half_life.count('#') > 0 else False
+        if result['extrapolated']:
             half_life = half_life.replace('#', ' ')
         
         items = half_life.split()
@@ -279,46 +295,132 @@ class Nuclide(object):
             it = it.strip()
 
         if len(items) == 0:
-            return ['?', '?', '?', extrapolated]
+            result['value'] = '?'
+            result['uncertainity'] = '?'
+            result['unit'] = '?'
+            result['relation'] = '?'
         elif items[0] in ['stbl', 'p-unst', 'n-unst']:
-            error = ''
-            if len(items) > 1:
-                error = items[1]
-            return [self._short_time_units[items[0]], '', error, extrapolated]
+            result['value'] = self._short_time_units[items[0]]
+            result['uncertainity'] = ''
+            result['unit'] = ''
+            result['relation'] = '='
         elif len(items) == 2 or len(items) == 3:
             if ( self._short_time_units.get(items[1]) == None and
                 self._long_time_units.get(items[1]) == None ):
                 raise ParameterError(
                       'Could not find half-life unit {}'.format(items[1]) )
-            error = '?' if len(items) == 2 else items[2]
-            return [items[0], items[1], error, extrapolated]
+            result['uncertainity'] = '?' if len(items) == 2 else items[2]
+            result['value'] = items[0]
+            result['unit'] = items[1] 
+            result['relation'] = '='
         else:
             raise ParameterError("String {} is not a valid half life string".format(half_life))
+        return result
+
+    def nwc_parse_half_life(self, half_life):
+        """Half-life given as a string "value unit uncertainty" white-space separated
+           as in nuclear waller cards
+           evaluators use units in capital letters
+           also units EV, KEV, MEV
+           No extrapolated values (or no documentation on that?)
+
+           returns dictionary {half life, unit, uncertainity, extrapolated}
+        """
+        result = {}
+        half_life = half_life.lower().strip()
+
+        # Placeholder. If documentation on extrapolation founded it 
+        # might be change to some function
+        result['extrapolated'] = False
+
+        items = half_life.split()
+        for it in items:
+            it = it.strip()
+        if len(items) == 2:
+            items.append('?')
+
+        if len(items) == 0:
+            result['value'] = '?'
+            result['uncertainity'] = '?'
+            result['unit'] = '?'
+            result['relation'] = '?'
+        elif items[0] in ['stable', 'unbound']:
+            result['value'] = items[0] if items[0] == 'stable' else 'unstable'
+            result['uncertainity'] = ''
+            result['unit'] = ''
+            result['relation'] = '='
+            if len(items) > 1:
+                result['uncertainity'] = items[1]
+        elif len(items) == 3:
+            if items[1] in ['ev', 'kev', 'mev']:
+                if items[1] == 'ev':
+                    items[1] = 'as'
+                elif items[1] == 'kev':
+                    items[1] = 'zs'
+                elif items[1] == 'mev':
+                    items[1] = 'ys'
+
+                try:
+                    items[0] = '{0:.5f}'.format(items[0] * 0.04562)
+                except TypeError:
+                    pass
+                try:
+                    items[2] = '{0:.5f}'.format(items[2] * 0.04562)
+                except TypeError:
+                    pass
+
+            if ( self._short_time_units.get(items[1]) == None and
+                 self._long_time_units.get(items[1]) == None ):
+                raise ParameterError(
+                      'Could not find half-life unit {}'.format(items[1]) )
+            result['value'] = items[0]
+            result['unit'] = items[1]
+            result['uncertainity'] = '?'
+            if items[2] == 'ap':
+                result['relation'] = '~' 
+            elif items[2] == 'lt':
+                result['relation'] = '>' 
+            elif items[2] == 'le':
+                result['relation'] = '\u2265' 
+            elif items[2] == 'gt':
+                result['relation'] = '<' 
+            elif items[2] == 'ge':
+                result['relation'] = '\u2264' 
+            else:
+                result['relation'] = '='
+                result['uncertainity'] = items[2]
+        else:
+            raise ParameterError("String {} is not a valid half life string".format(half_life))
+        return result
 
     def __nb_parse_gs_spin(self, gs_spin):
         """Parses nubase style spin information
 
-        returns list [spin, extrapolated] """
+        returns dictionary {value, extrapolated} """
+        result = {}
         gs_spin = gs_spin.strip()
-        extrapolated = True if gs_spin.count('#') > 0 else False
-        if extrapolated:
+        result['extrapolated'] = True if gs_spin.count('#') > 0 else False
+        if result['extrapolated']:
             gs_spin = gs_spin.replace('#', ' ')
-        return [gs_spin, extrapolated]
+        result['value'] = gs_spin
+        return result
 
     def __nb_parse_decay_modes(self, decay_modes):
         """Parses decay modes string from nubase
 
-        returns list of lists
+        returns list of dictionaries
         [ [mode, value, relation, uncertainity], [...] ]
         """
         # NuBase evaluators have left some fortran garbage like 'LE' and 'GE'
         # We replace them with proper unicode signs 
-        decay_modes = decay_modes.replace('LE', '\u2264')
-        decay_modes = decay_modes.replace('GE', '\u2265')
+        decay_modes = decay_modes.replace('le', '\u2264')
+        decay_modes = decay_modes.replace('ge', '\u2265')
             
         decay_list = [] 
         if len(decay_modes.strip()) == 0:
-            decay_list.append(['?', '=', '?', '0'])
+            empty = {'mode' : '?', 'value' : '', 'relation' : '', 
+                     'uncertainity' : ''}
+            decay_list.append(empty)
             return decay_list
         try:
             for item in decay_modes.split(';'):
@@ -338,10 +440,11 @@ class Nuclide(object):
                 if len(value) > 1:
                     error = value[1]
                 value = value[0]
-                decay_list.append([mode, relation, value, error])
+                decay_mode = {'mode': mode, 'relation' : relation, 'value' : value,
+                               'uncertainity' : error}
+                decay_list.append(decay_mode)
         except ValueError:
             raise ParameterError('Error parsing decay modes string {} nuclide {}'.format(decay_modes, self))
-
         return decay_list
 
 
@@ -397,14 +500,43 @@ class Nuclide(object):
         except (IndexError, ValueError):
             raise ParameterError('Error parsing isomer data string {} nuclide {}'.format(isomer_data, self))
 
-        self.isomers.append([energy, error, extrapolated, half_life, decay_modes, code + " " + comment])
+        result = { 'energy' : energy,
+                   'uncertainity': error,
+                   'extrapolated': extrapolated,
+                   'half_life': half_life,
+                   'decay_modes' : decay_modes,
+                   'comment': code + " " + comment }
+        self.add_isomer(result)
 
 
     def add_isomer(self, isomer):
-        """Adds isomer"""
-        if len(isomer) != 5 or len(isomer[3]) != 4:
-            raise ParameterError('Isomer data is expected to be a list [energy, error, extrapolated, [half_life, unit, uncertainity, extrapolated], [[decay mode, relation, value, uncerainity]]]; {} was passed'.format(isomer))
+        """Adds isomer
+        isomer data should be a dictionary:
+        {energy, uncertainity, extrapolated, 
+         half_life : {half_life, unit, uncertainity, extrapolated},
+         decay_modes: [{mode, relation, value, uncertainity},{},...] }
+        """
+        for key in ['energy', 'uncertainity', 'extrapolated', 'half_life', 'decay_modes']:
+            if isomer.get(key) == None:
+                raise ParameterError("Wrong format of isomer data '{}' was passed; key {} error".format(isomer, key))
+        for key in ['value', 'unit', 'uncertainity', 'relation', 'extrapolated']:
+            if isomer['half_life'].get(key) == None:
+                raise ParameterError("Wrong format of isomer data '{}' was passed; key {} error".format(isomer, key))
+        for mode in isomer['decay_modes']:
+            for key in ['mode', 'relation', 'uncertainity', 'value']:
+                if mode.get(key) == None:
+                    raise ParameterError("Wrong format of isomer data '{}' was passed; key {} error".format(isomer))
         self.isomers.append(isomer)
+
+    def add_isomer_decay_mode(self, isomer_index, decay_mode):
+        """
+        In NWC ascii file decay mode entries are spread across multiple lines
+        In order to easier add data this function adds decay mode to existing isomer
+        """
+        for key in ['mode', 'relation', 'uncertainity', 'value']:
+            if decay_mode.get(key) == None:
+                raise ParameterError("Wrong format of isomer decay data '{}' was passed".format(isomer))
+        self.isomers[isomer_index]['decay_modes'].append(decay_mode)
 
 
     def parse_xml_entry(self, nuclide):
@@ -419,68 +551,63 @@ class Nuclide(object):
         self.Z = nuclide.getAttribute('Z')
 
         mass_defect = nuclide.getElementsByTagName('mass_defect')[0]
-        md_attrs = ['value', 'uncertainity', 'extrapolation']
-        md_data = []
+        md_attrs = ['value', 'uncertainity', 'extrapolated']
+        md_data = {}
         for attr in md_attrs:
             value = mass_defect.getAttribute(attr)
-            md_data.append(value)
+            md_data[attr] = value
         self.mass_defect = md_data
 
         half_life = nuclide.getElementsByTagName('half_life')[0]
-        hl_attrs = ['value', 'unit', 'uncertainity', 'extrapolation']
-        hl_data = []
-        for attr in hl_attrs:
+        hl_attr = ['value', 'unit', 'uncertainity', 'relation', 'extrapolated']
+        hl_data = {}
+        for attr in hl_attr:
             value = half_life.getAttribute(attr)
-            hl_data.append(value)
+            hl_data[attr] = value
         self.half_life = hl_data
 
         spin = nuclide.getElementsByTagName('spin')[0]
-        s_attrs = ['value', 'extrapolation']
-        s_data = []
+        s_attrs = ['value', 'extrapolated']
+        s_data = {}
         for attr in s_attrs:
             value = spin.getAttribute(attr)
-            s_data.append(value)
+            s_data[attr] = value
         self.gs_spin = s_data
 
         decay_modes = nuclide.getElementsByTagName("decay_modes")[0]
-        decay_attr = ("mode", "value",
-                        "relation", "uncertainity")
+        decay_attr = ["mode", "value", "relation", "uncertainity"]
         dm_data = []
         for decay in decay_modes.getElementsByTagName("decay"):
-            mode_data = []
+            mode_data = {}
             for attr in decay_attr:
                 value = decay.getAttribute(attr)
-                mode_data.append(value)
+                mode_data[attr] = value
             dm_data.append(mode_data)
         self.decay_modes = dm_data
 
         isomers = nuclide.getElementsByTagName("isomers")
         if len(isomers) > 0:
             for isomer in isomers[0].getElementsByTagName("isomer"):
-                i_data = []
-                i_attrs = ('energy', 'extrapolation', 'uncertainity')
+                i_data = {}
+                i_attrs = ['energy', 'extrapolated', 'uncertainity']
                 for attr in i_attrs:
                     value = isomer.getAttribute(attr)
-                    i_data.append(value)
+                    i_data[attr] = value
 
                 half_life = isomer.getElementsByTagName('half_life')[0]
-                hl_data = []
-                hl_attr = ("value", "unit", "uncertainity",
-                            "extrapolation")
+                hl_data = {}
                 for attr in hl_attr:
                     value = half_life.getAttribute(attr)
-                    hl_data.append(value)
-                i_data.append(hl_data)
+                    hl_data[attr] = value
+                i_data['half_life'] = hl_data
 
                 decay_modes = nuclide.getElementsByTagName("decay_modes")[0]
-                decay_attr = ("mode", "value",
-                            "relation", "uncertainity")
                 dm_data = []
                 for decay in decay_modes.getElementsByTagName("decay"):
-                    mode_data = []
+                    mode_data = {}
                     for attr in decay_attr:
                         value = decay.getAttribute(attr)
-                        mode_data.append(value)
+                        mode_data[attr] = value
                     dm_data.append(mode_data)
-                i_data.append(dm_data)
+                i_data['decay_modes'] = dm_data
                 self.add_isomer(i_data)

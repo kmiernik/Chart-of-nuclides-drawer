@@ -3,6 +3,7 @@
 *.swp
 # Ignore this file (no licence information provided)
 nubtab03.asc
+nwc11.txt
 # Directories
 __pycache__
 old_code

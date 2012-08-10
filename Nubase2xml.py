@@ -99,6 +99,71 @@ import argparse
 import xml.dom.minidom
 from Nuclide import *
 
+def add_nuclide_to_xml_table(item, table, root):
+    nuclide = table.createElement("nuclide")
+    nuclide.setAttribute("Z", str(item.Z))
+    nuclide.setAttribute("A", str(item.A))
+    nuclide.setAttribute("id", str(item))
+    nuclide.setAttribute("element", item.element)
+
+    mass_defect = table.createElement("mass_defect")
+    for key, value in item.mass_defect.items():
+        mass_defect.setAttribute(key, str(value))
+    nuclide.appendChild(mass_defect)
+
+    half_life = table.createElement("half_life")
+    for key, value in item.half_life.items():
+        half_life.setAttribute(key, str(value))
+    nuclide.appendChild(half_life)
+
+    spin = table.createElement("spin")
+    for key, value in item.gs_spin.items():
+        spin.setAttribute(key, str(value))
+    nuclide.appendChild(spin)
+
+    decay_modes = table.createElement("decay_modes")
+    for mode in item.decay_modes:
+        decay = table.createElement("decay")
+        for key, value in mode.items():
+            decay.setAttribute(key, str(value))
+        decay_modes.appendChild(decay)
+    nuclide.appendChild(decay_modes)
+
+    isomers = table.createElement("isomers")
+    for state in item.isomers:
+        isomer = table.createElement("isomer")
+        for key in ['energy', 'uncertainity', 'extrapolated']:
+            isomer.setAttribute(key, str(state[key]))
+
+        ihalf_life = table.createElement("half_life")
+        for key, value in state['half_life'].items():
+            ihalf_life.setAttribute(key, str(value))
+        isomer.appendChild(ihalf_life)
+
+        idecay_modes = table.createElement("decay_modes")
+        for mode in state['decay_modes']:
+            idecay = table.createElement("decay")
+            for key, value in mode.items():
+                idecay.setAttribute(key, str(value))
+            idecay_modes.appendChild(idecay)
+        isomer.appendChild(idecay_modes)
+
+        comment_text = table.createTextNode(state['comment'])
+        comment = table.createElement("comment")
+        comment.appendChild(comment_text)
+        isomer.appendChild(comment)
+
+        isomers.appendChild(isomer)
+    
+    if len(item.isomers) > 0:
+        nuclide.appendChild(isomers)
+
+    comment_text = table.createTextNode(item.comment)
+    comment = table.createElement("comment")
+    comment.appendChild(comment_text)
+    nuclide.appendChild(comment)
+    root.appendChild(nuclide)
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Reads NuBase2003 ugly ascii file and writes xml document')
     parser.add_argument('infile', type=argparse.FileType('r'), 
@@ -121,7 +186,7 @@ if __name__ == "__main__":
         half_life = line[60:78].strip()
         gs_spin = line[79:93].strip()
         comment = line[93:105].strip()
-        decay_modes = line[106:-1].strip()
+        decay_modes = line[106:-1].strip().lower()
         try:
             if not(isomer):
                 if not(first):
@@ -147,80 +212,6 @@ if __name__ == "__main__":
     table = dom.createDocument(None, "nuclear_data_table", None)
     root = table.documentElement
     for item in data:
-        nuclide = table.createElement("nuclide")
-        nuclide.setAttribute("Z", str(item.Z))
-        nuclide.setAttribute("A", str(item.A))
-        nuclide.setAttribute("id", str(item))
-        nuclide.setAttribute("element", item.element)
-
-        mass_defect = table.createElement("mass_defect")
-        mass_defect.setAttribute("value", str(item.mass_defect[0]))
-        mass_defect.setAttribute("uncertainity", str(item.mass_defect[1]))
-        mass_defect.setAttribute("extrapolation", str(item.mass_defect[2]))
-        nuclide.appendChild(mass_defect)
-
-        half_life = table.createElement("half_life")
-        half_life.setAttribute("value", str(item.half_life[0]))
-        half_life.setAttribute("unit", str(item.half_life[1]))
-        half_life.setAttribute("uncertainity", str(item.half_life[2]))
-        half_life.setAttribute("extrapolation", str(item.half_life[3]))
-        nuclide.appendChild(half_life)
-
-        spin = table.createElement("spin")
-        spin.setAttribute("value", str(item.gs_spin[0]))
-        spin.setAttribute("extrapolation", str(item.gs_spin[1]))
-        nuclide.appendChild(spin)
-
-        decay_modes = table.createElement("decay_modes")
-        for mode in item.decay_modes:
-            decay = table.createElement("decay")
-            decay.setAttribute("mode", str(mode[0]))
-            decay.setAttribute("relation", str(mode[1]))
-            decay.setAttribute("value", str(mode[2]))
-            decay.setAttribute("uncertainity", str(mode[3]))
-            decay_modes.appendChild(decay)
-        nuclide.appendChild(decay_modes)
-
-        isomers = table.createElement("isomers")
-        for state in item.isomers:
-            isomer = table.createElement("isomer")
-            isomer.setAttribute("energy", str(state[0]))
-            isomer.setAttribute("uncertainity", str(state[1]))
-            isomer.setAttribute("extrapolation", str(state[2]))
-
-            ihalf_life = table.createElement("half_life")
-            ihalf_life.setAttribute("value", str(state[3][0]))
-            ihalf_life.setAttribute("unit", str(state[3][1]))
-            ihalf_life.setAttribute("uncertainity", str(state[3][2]))
-            ihalf_life.setAttribute("extrapolation", str(state[3][3]))
-            isomer.appendChild(ihalf_life)
-
-            idecay_modes = table.createElement("decay_modes")
-            for mode in state[4]:
-                idecay = table.createElement("decay")
-                idecay.setAttribute("mode", str(mode[0]))
-                idecay.setAttribute("relation", str(mode[1]))
-                idecay.setAttribute("value", str(mode[2]))
-                idecay.setAttribute("uncertainity", str(mode[3]))
-                idecay_modes.appendChild(idecay)
-            isomer.appendChild(idecay_modes)
-
-            comment_text = table.createTextNode(state[5])
-            comment = table.createElement("comment")
-            comment.appendChild(comment_text)
-            isomer.appendChild(comment)
-
-            isomers.appendChild(isomer)
-        
-        if len(item.isomers) > 0:
-            nuclide.appendChild(isomers)
-
-        comment_text = table.createTextNode(item.comment)
-        comment = table.createElement("comment")
-        comment.appendChild(comment_text)
-        nuclide.appendChild(comment)
-
-        root.appendChild(nuclide)
-
+        add_nuclide_to_xml_table(item, table, root)
     args.outfile.write(table.toprettyxml(indent="    ", encoding="utf-8").decode("utf-8"))
 
