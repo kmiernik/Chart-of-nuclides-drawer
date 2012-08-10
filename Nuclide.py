@@ -379,13 +379,13 @@ class Nuclide(object):
             if items[2] == 'ap':
                 result['relation'] = '~' 
             elif items[2] == 'lt':
-                result['relation'] = '>' 
-            elif items[2] == 'le':
-                result['relation'] = '\u2265' 
-            elif items[2] == 'gt':
                 result['relation'] = '<' 
-            elif items[2] == 'ge':
+            elif items[2] == 'le':
                 result['relation'] = '\u2264' 
+            elif items[2] == 'gt':
+                result['relation'] = '>' 
+            elif items[2] == 'ge':
+                result['relation'] = '\u2265' 
             else:
                 result['relation'] = '='
                 result['uncertainity'] = items[2]
