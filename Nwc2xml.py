@@ -37,7 +37,6 @@
 import argparse
 import xml.dom.minidom
 from Nuclide import *
-from Nubase2xml import add_nuclide_to_xml_table as add_nuclide_to_xml_table
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Reads Nuclear Wallet Cards ascii file and writes xml document')
@@ -145,8 +144,8 @@ if __name__ == "__main__":
                         data.append(isotope)
                     else:
                         first = False
-                    isotope = Nuclide(Z, A, 'nwc', mass_defect, half_life,
-                                        gs_spin, decay_modes, [], comment)
+                    isotope = NuclideNwc11(Z, A, mass_defect, half_life,
+                                           gs_spin, decay_modes, [], comment)
                     isomer_hl = isotope.nwc_parse_half_life(half_life)
                     isomer_data = {'energy' : isomer_excitation,
                                     'uncertainity' : '?',
@@ -170,8 +169,8 @@ if __name__ == "__main__":
                     data.append(isotope)
                 else:
                     first = False
-                isotope = Nuclide(Z, A, 'nwc', mass_defect, half_life,
-                                    gs_spin, decay_modes, [], comment)
+                isotope = NuclideNwc11(Z, A, mass_defect, half_life,
+                                       gs_spin, decay_modes, [], comment)
 
         except ParameterError as err:
             print('Line', line_number, ':', err.msg)
@@ -189,7 +188,7 @@ if __name__ == "__main__":
     dom = xml.dom.minidom.getDOMImplementation()
     table = dom.createDocument(None, "nuclear_data_table", None)
     root = table.documentElement
-    for item in data:
-        add_nuclide_to_xml_table(item, table, root)
+    for isotope in data:
+        isotope.add_to_xml_table(item, table, root)
     args.outfile.write(table.toprettyxml(indent="    ", encoding="utf-8").decode("utf-8"))
 

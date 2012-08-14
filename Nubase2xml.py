@@ -99,71 +99,6 @@ import argparse
 import xml.dom.minidom
 from Nuclide import *
 
-def add_nuclide_to_xml_table(item, table, root):
-    nuclide = table.createElement("nuclide")
-    nuclide.setAttribute("Z", str(item.Z))
-    nuclide.setAttribute("A", str(item.A))
-    nuclide.setAttribute("id", str(item))
-    nuclide.setAttribute("element", item.element)
-
-    mass_defect = table.createElement("mass_defect")
-    for key, value in item.mass_defect.items():
-        mass_defect.setAttribute(key, str(value))
-    nuclide.appendChild(mass_defect)
-
-    half_life = table.createElement("half_life")
-    for key, value in item.half_life.items():
-        half_life.setAttribute(key, str(value))
-    nuclide.appendChild(half_life)
-
-    spin = table.createElement("spin")
-    for key, value in item.gs_spin.items():
-        spin.setAttribute(key, str(value))
-    nuclide.appendChild(spin)
-
-    decay_modes = table.createElement("decay_modes")
-    for mode in item.decay_modes:
-        decay = table.createElement("decay")
-        for key, value in mode.items():
-            decay.setAttribute(key, str(value))
-        decay_modes.appendChild(decay)
-    nuclide.appendChild(decay_modes)
-
-    isomers = table.createElement("isomers")
-    for state in item.isomers:
-        isomer = table.createElement("isomer")
-        for key in ['energy', 'uncertainity', 'extrapolated']:
-            isomer.setAttribute(key, str(state[key]))
-
-        ihalf_life = table.createElement("half_life")
-        for key, value in state['half_life'].items():
-            ihalf_life.setAttribute(key, str(value))
-        isomer.appendChild(ihalf_life)
-
-        idecay_modes = table.createElement("decay_modes")
-        for mode in state['decay_modes']:
-            idecay = table.createElement("decay")
-            for key, value in mode.items():
-                idecay.setAttribute(key, str(value))
-            idecay_modes.appendChild(idecay)
-        isomer.appendChild(idecay_modes)
-
-        comment_text = table.createTextNode(state['comment'])
-        comment = table.createElement("comment")
-        comment.appendChild(comment_text)
-        isomer.appendChild(comment)
-
-        isomers.appendChild(isomer)
-    
-    if len(item.isomers) > 0:
-        nuclide.appendChild(isomers)
-
-    comment_text = table.createTextNode(item.comment)
-    comment = table.createElement("comment")
-    comment.appendChild(comment_text)
-    nuclide.appendChild(comment)
-    root.appendChild(nuclide)
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Reads NuBase2003 ugly ascii file and writes xml document')
     parser.add_argument('infile', type=argparse.FileType('r'), 
@@ -193,8 +128,8 @@ if __name__ == "__main__":
                     data.append(isotope)
                 else:
                     first = False
-                isotope = Nuclide(Z, A, 'nubase', mass_defect, half_life,
-                                  gs_spin, decay_modes, [], comment)
+                isotope = NuclideNb03(Z, A, mass_defect, half_life,
+                                      gs_spin, decay_modes, comment)
             else:
                 isotope.nb_add_isomer(isomer_data, half_life,
                                       decay_modes, comment)
@@ -211,7 +146,7 @@ if __name__ == "__main__":
     dom = xml.dom.minidom.getDOMImplementation()
     table = dom.createDocument(None, "nuclear_data_table", None)
     root = table.documentElement
-    for item in data:
-        add_nuclide_to_xml_table(item, table, root)
+    for isotope in data:
+        isotope.add_to_xml_table(table, root)
     args.outfile.write(table.toprettyxml(indent="    ", encoding="utf-8").decode("utf-8"))
 

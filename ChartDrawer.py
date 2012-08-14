@@ -92,7 +92,7 @@ SIZE_FIELD = SIZE_SHAPE + SIZE_GAP
 # Font size used for element name
 SIZE_FONT = 7 
 # Font size used for half-life
-SIZE_FONT_HL = 4 
+SIZE_FONT_HL = 5 
 
 MAGIC_NUMBERS = [2, 8, 20, 28, 50, 82, 126]
 
@@ -142,8 +142,7 @@ def load_xml_nuclear_table(datafile, n_range, z_range,
             if Z > z_limits[1]:
                 z_limits[1] = Z
 
-            isotope = Nuclide()
-            isotope.parse_xml_entry(nuclide)
+            isotope = NuclideXml(Z, A, nuclide)
             data.append(isotope)
         except (ValueError, LookupError) as err:
             print("{0}: import error: {1}".format(datafile, err))
@@ -460,9 +459,8 @@ def draw_magic_lines(layers, n_magic, z_magic,
         _draw_line(layers[2], [x1, y1], [x2, y2], "{}z1".format(Z))
 
 def draw_numbers(layers, shape, n_limits, z_limits, size):
-    # Start from 1 so we want print N = 0 number
-    for n in range(1, n_limits[1] - n_limits[0] + 1):
-        if (n + n_limits[0]) % 2 == 0:
+    for n in range(0, n_limits[1] - n_limits[0] + 1):
+        if (n + n_limits[0]) % 2 == 0 and (n + n_limits[0] > 0):
             z_first = 0
             while ( not(shape[n][z_first]) and 
                     z_first < z_limits[1] - z_limits[0] + 1 ):
@@ -471,8 +469,8 @@ def draw_numbers(layers, shape, n_limits, z_limits, size):
             y = size[1] - (z_first + 1) * SIZE_FIELD + SIZE_GAP + 1.25 * SIZE_FONT
             _draw_text(layers[3], [x, y], '#000000', 
                        SIZE_FONT * 1.5, str(n + n_limits[0]))
-    for z in range(1, z_limits[1] - z_limits[0] + 1):
-        if (z + z_limits[0] % 2) % 2 == 0:
+    for z in range(0, z_limits[1] - z_limits[0] + 1):
+        if (z + z_limits[0] % 2) % 2 == 0 and (z + z_limits[0] > 0):
             n_first = 0
             while ( not(shape[n_first][z]) and 
                     n_first < n_limits[1] - n_limits[0] + 1 ):
@@ -490,16 +488,16 @@ if __name__ == "__main__":
                          help='Input data base XML file (required)')
     parser.add_argument('outfile', type=argparse.FileType('w'), 
                          help='Output data SVG file (required)')
-    parser.add_argument('--names', action='store_true', 
-                        help='Show names')
-    parser.add_argument('--halflives', action='store_true', 
-                        help='Show half-lives')
-    parser.add_argument('--magic', action='store_true', 
-                        help='Show magic numbers')
-    parser.add_argument('--numbers', action='store_true', 
-                        help='Show numbers along axis')
-    parser.add_argument('--unknown', action='store_true', 
-                        help='Show also isotope with unknown decay mode')
+    parser.add_argument('--names', action='store_false', 
+                        help='Disable names')
+    parser.add_argument('--halflives', action='store_false', 
+                        help='Disable half-lives')
+    parser.add_argument('--magic', action='store_false', 
+                        help='Disable magic numbers')
+    parser.add_argument('--numbers', action='store_false', 
+                        help='Disable numbers along axis')
+    parser.add_argument('--unknown', action='store_false', 
+                        help='Disable isotopes with unknown decay mode')
     parser.add_argument('--z', nargs=2, default=[0,120],
                         dest='Z', type=int, help='Atomic number Z range (%(type)s), default: %(default)s')
     parser.add_argument('--n', nargs=2, default=[0,180],
