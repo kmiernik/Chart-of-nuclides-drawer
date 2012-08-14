@@ -96,9 +96,9 @@ class Nuclide(object):
               'Rg',  'Cn', 'Uut',  'Fl', 'Uup',\
               'Lv', 'Uus', 'Uuo', 'Uue', 'Ubn'
 
-    def __init__(self, Z = 0, A = 0, mass_defect = {},
-                 half_life = {}, gs_spin = {}, decay_modes = [],
-                 isomers = [], comment = ""):
+    def __init__(self, Z = 0, A = 0, mass_defect = None,
+                 half_life = None, gs_spin = None, decay_modes = None,
+                 isomers = None, comment = None):
         """Constructor for base class. All fields are properites and
         sanity check is done therein."""
 
@@ -109,8 +109,15 @@ class Nuclide(object):
         self.half_life = half_life
         self.gs_spin = gs_spin
         self.decay_modes = decay_modes
-        self.comment = comment
-        self.isomers = isomers
+        if isomers is None:
+            self.isomers = []
+        else:
+            self.isomers = isomers
+        if comment is None:
+            self.comment = ""
+        else:
+            self.comment = comment
+
 
     def __str__(self):
         return "{}{}".format(self.A, self.element)
@@ -169,11 +176,13 @@ class Nuclide(object):
     def mass_defect(self, mass_defect):
         """Sets mass defect data, format 
         dict {mass, uncertainity, extrapolated} is expected"""
-        if mass_defect != {}:
+        if mass_defect is None:
+            self._mass_defect = {}
+        else:
             for key in ['value', 'uncertainity', 'extrapolated']:
-                if mass_defect.get(key) == None:
+                if mass_defect.get(key) is None:
                     raise ParameterError("Wrong format of mass defect '{}' was passed".format(mass_defect))
-        self._mass_defect = mass_defect
+            self._mass_defect = mass_defect
 
     @property
     def half_life(self):
@@ -184,11 +193,13 @@ class Nuclide(object):
     def half_life(self, half_life):
         """Sets half-life data, format dict
         {value, unit, uncertainity, extrapolated, relation} is expected"""
-        if half_life != {}:
+        if half_life is None:
+            self._half_life = {}
+        else:
             for key in ['value', 'unit', 'uncertainity', 'relation', 'extrapolated']:
-                if half_life.get(key) == None:
+                if half_life.get(key) is None:
                     raise ParameterError("Wrong format of half life '{}' was passed".format(half_life))
-        self._half_life = half_life
+            self._half_life = half_life
 
     @property
     def gs_spin(self):
@@ -200,11 +211,13 @@ class Nuclide(object):
         """Sets g.s. spin, format
         {'value' : , 'extrapolated' : }
         """
-        if gs_spin != {}:
+        if gs_spin is None:
+            self._gs_spin = {}
+        else:
             for key in ['value', 'extrapolated']:
-                if gs_spin.get(key) == None:
+                if gs_spin.get(key) is None:
                     raise ParameterError("Wrong format of ground state spin '{}' was passed".format(gs_spin))
-        self._gs_spin = gs_spin
+            self._gs_spin = gs_spin
 
     @property
     def decay_modes(self):
@@ -218,8 +231,8 @@ class Nuclide(object):
     @decay_modes.setter
     def decay_modes(self, decay_modes):
         """Sets decay_modes data"""
-        if decay_modes != []:
-            self._decay_modes = []
+        self._decay_modes = []
+        if decay_modes is not None:
             for mode in decay_modes:
                 self.add_decay_mode(mode)
 
@@ -228,7 +241,7 @@ class Nuclide(object):
         {'mode': , 'relation': , 'value' : , 'uncertainity': }
         """
         for key in ['mode', 'relation', 'value', 'uncertainity']:
-            if decay_mode.get(key) == None:
+            if decay_mode.get(key) is None:
                 raise ParameterError("Wrong format of decay mode '{}' was passed".format(decay_mode))
         self._decay_modes.append(decay_mode)
 
@@ -240,14 +253,14 @@ class Nuclide(object):
          decay_modes: [{mode, relation, value, uncertainity},{},...] }
         """
         for key in ['energy', 'uncertainity', 'extrapolated', 'half_life', 'decay_modes']:
-            if isomer.get(key) == None:
+            if isomer.get(key) is None:
                 raise ParameterError("Wrong format of isomer data '{}' was passed; key {} error".format(isomer, key))
         for key in ['value', 'unit', 'uncertainity', 'relation', 'extrapolated']:
-            if isomer['half_life'].get(key) == None:
+            if isomer['half_life'].get(key) is None:
                 raise ParameterError("Wrong format of isomer data '{}' was passed; key {} error".format(isomer, key))
         for mode in isomer['decay_modes']:
             for key in ['mode', 'relation', 'uncertainity', 'value']:
-                if mode.get(key) == None:
+                if mode.get(key) is None:
                     raise ParameterError("Wrong format of isomer data '{}' was passed; key {} error".format(isomer))
         self.isomers.append(isomer)
 
@@ -257,7 +270,7 @@ class Nuclide(object):
         Adds decay mode to isomer data selected by isomer_index
         """
         for key in ['mode', 'relation', 'uncertainity', 'value']:
-            if decay_mode.get(key) == None:
+            if decay_mode.get(key) is None:
                 raise ParameterError("Wrong format of isomer decay data '{}' was passed".format(isomer))
         self.isomers[isomer_index]['decay_modes'].append(decay_mode)
 
@@ -348,8 +361,15 @@ class NuclideNb03(Nuclide):
         Otherwise objects will be linked by a common references to 
         memeber (if member is not changed e.g isomers)
         and they will not be scheduled for garbage collection!
+
+        Now more pythonic approach
+        __init__(something = None):
+            if something is None:
+                self.something = []
+            else:
+                self.something = something
         """
-        super().__init__(Z, A, {}, {}, {}, [], [], "")
+        super().__init__(Z, A)
         self.mass_defect = self._parse_mass_defect(mass_defect)
         self.half_life = self._parse_half_life(half_life)
         self.gs_spin = self._parse_gs_spin(gs_spin)
@@ -408,8 +428,8 @@ class NuclideNb03(Nuclide):
             result['unit'] = ''
             result['relation'] = '='
         elif len(items) == 2 or len(items) == 3:
-            if ( self._short_time_units.get(items[1]) == None and
-                self._long_time_units.get(items[1]) == None ):
+            if ( self._short_time_units.get(items[1]) is None and
+                self._long_time_units.get(items[1]) is None ):
                 raise ParameterError(
                       'Could not find half-life unit {}'.format(items[1]) )
             result['uncertainity'] = '?' if len(items) == 2 else items[2]
@@ -456,7 +476,7 @@ class NuclideNb03(Nuclide):
                 # or "mode= ?"
                 # we fix this so it always has '=' sign
                 question = re.search(r" \?", item)
-                if question != None:
+                if question is not None:
                     if item.count('=') == 0:
                         item = re.sub(r" \?", "=?", item)
 
@@ -540,11 +560,11 @@ class NuclideNwc11(Nuclide):
     """Nuclide class for reading data from Nuclear Wallet Cards 2011 format"""
 
     def __init__(self, Z, A, mass_defect, half_life, gs_spin,
-                 decay_modes, comment = ""):
+                 decay_modes, comment = None):
         """ Constructor for Nuclear Wallet Cards 2011 version."""
-        super().__init__(Z, A, mass_defect, {}, gs_spin, decay_modes, [], "")
+        super().__init__(Z, A, mass_defect, half_life=None, gs_spin=gs_spin,
+                         decay_modes=decay_modes, isomers=None, comment=comment)
         self.half_life = self.nwc_parse_half_life(half_life)
-        self.comment = comment
 
     def nwc_parse_half_life(self, half_life):
         """Half-life given as a string "value unit uncertainty" white-space separated
@@ -598,8 +618,8 @@ class NuclideNwc11(Nuclide):
                 except TypeError:
                     pass
 
-            if ( self._short_time_units.get(items[1]) == None and
-                 self._long_time_units.get(items[1]) == None ):
+            if ( self._short_time_units.get(items[1]) is None and
+                 self._long_time_units.get(items[1]) is None ):
                 raise ParameterError(
                       'Could not find half-life unit {}'.format(items[1]) )
             result['value'] = items[0]
@@ -635,7 +655,7 @@ class NuclideXml(Nuclide):
             isotope = NuclideXml(A, Z, xml_nuclide_entry)
         """
         super().__init__(Z, A)
-        if xml_nuclide_entry != None:
+        if xml_nuclide_entry is not None:
             self.parse_xml_entry(xml_nuclide_entry)
 
     def parse_xml_entry(self, xml_nuclide_entry):

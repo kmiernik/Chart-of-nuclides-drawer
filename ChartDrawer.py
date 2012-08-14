@@ -339,7 +339,7 @@ def draw_nuclide(nuclide, layers, position, args):
                     break
                 except ValueError:
                     secondary_size = 'small'
-            elif re.search(cluster_re, nuclide.decay_modes[i]['mode']) != None:
+            elif re.search(cluster_re, nuclide.decay_modes[i]['mode']) is not None:
                 secondary_size = 'small'
                 secondary_color = COLORS['cluster']
                 break
@@ -353,7 +353,7 @@ def draw_nuclide(nuclide, layers, position, args):
                     tertiary_size  = 'small'
                     break
                 elif re.search(cluster_re, 
-                               nuclide.decay_modes[i]['mode']) != None:
+                               nuclide.decay_modes[i]['mode']) is not None:
                     tertiary_size = 'small'
                     tertiary_color = COLORS['cluster']
                     break
@@ -415,7 +415,7 @@ def draw_nuclide(nuclide, layers, position, args):
         if primary_color != COLORS['is']:
             half_life_string = nuclide.half_life['value'] 
             sci_re = r'^[-+]?[0-9]*\.?[0-9]+([eE]+[-+]?[0-9]+)$'
-            if re.search(sci_re, half_life_string) != None:
+            if re.search(sci_re, half_life_string) is not None:
                 try:
                     hl = float(half_life_string)
                     half_life_string = '{0:.1e}'.format(hl)
@@ -573,13 +573,13 @@ if __name__ == "__main__":
         N = nuclide.N
         Z = nuclide.Z
         if N in MAGIC_NUMBERS:
-            if n_magic.get(N) != None:
+            if n_magic.get(N) is not None:
                 if n_magic[N][1] < Z:
                     n_magic[N][1] = Z
             else:
                 n_magic[N] = [Z, Z]
         if Z in MAGIC_NUMBERS:
-            if z_magic.get(Z) != None:
+            if z_magic.get(Z) is not None:
                 if z_magic[Z][1] < N:
                     z_magic[Z][1] = N
             else:
