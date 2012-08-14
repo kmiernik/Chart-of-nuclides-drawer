@@ -15,11 +15,11 @@ An example output is provided in example.svg file.
 
     optional arguments:
     -h, --help   show this help message and exit
-    --names      Show names
-    --halflives  Show half-lives
-    --magic      Show magic numbers
-    --numbers    Show numbers along axis
-    --unknown    Show also isotopes with unknown decay mode
+    --names      Disable names
+    --halflives  Disable half-lives
+    --magic      Disable magic numbers
+    --numbers    Disable numbers along axis
+    --unknown    Disable isotopes with unknown decay mode
     --z Z Z      Atomic number Z range (int), default: [0, 120]
     --n N N      Neutron number N range (int), default: [0, 180]
 
@@ -35,7 +35,7 @@ ascii format. See http://www.nndc.bnl.gov/wallet/
 Nuclear Waller Cards by J.K. Tulli, National Nuclear Data Center,
 Brookhaven National Laboratory
 
-The generated chart of nuclides is following (but not precisely) the format
+The generated chart of nuclides is generally following (but not exactly)  the format
 of Karlsruher Chart of Nuclides. The nuclides are coded with colors according to
 primary decay mode:
 Black - stable
@@ -52,7 +52,7 @@ Secondary decay mode is indicated by triangle. A large triangle is used if
 secondary decay mode branching is larger then 5%. Otherwise small triangle is
 used (likewise for tertiary decay mode).
 
-A Nuclide class provides parser to read data from NuBase ascii file or xml
+A Nuclide classes provides parser to read data from NuBase/NWC ascii file or xml
 document. Note that some informations are not being used on the chart 
 (e.g. mass of nuclides, isomeric states), but are present in the data base.
 The Nuclide class can easily used to write scripts using these informations 

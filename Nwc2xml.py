@@ -145,7 +145,7 @@ if __name__ == "__main__":
                     else:
                         first = False
                     isotope = NuclideNwc11(Z, A, mass_defect, half_life,
-                                           gs_spin, decay_modes, [], comment)
+                                           gs_spin, decay_modes, comment)
                     isomer_hl = isotope.nwc_parse_half_life(half_life)
                     isomer_data = {'energy' : isomer_excitation,
                                     'uncertainity' : '?',
@@ -170,7 +170,7 @@ if __name__ == "__main__":
                 else:
                     first = False
                 isotope = NuclideNwc11(Z, A, mass_defect, half_life,
-                                       gs_spin, decay_modes, [], comment)
+                                       gs_spin, decay_modes, comment)
 
         except ParameterError as err:
             print('Line', line_number, ':', err.msg)
@@ -189,6 +189,6 @@ if __name__ == "__main__":
     table = dom.createDocument(None, "nuclear_data_table", None)
     root = table.documentElement
     for isotope in data:
-        isotope.add_to_xml_table(item, table, root)
+        isotope.add_to_xml_table(table, root)
     args.outfile.write(table.toprettyxml(indent="    ", encoding="utf-8").decode("utf-8"))
 
