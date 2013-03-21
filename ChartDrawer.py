@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Copyright Krzysztof Miernik 2012
 k.a.miernik@gmail.com 

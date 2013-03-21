@@ -65,7 +65,7 @@ if __name__ == "__main__":
         Q_value = line[49:56].strip()
         half_life = line[63:80].strip()
         abundance = line[81:96].strip()
-        mass = line[98:105].strip()
+        mass = line[96:105].strip()
         mass_error = line[106:113].strip()
         extrapolated = True if line[114] == 'S' else False
         comment = line[117:123].strip()
