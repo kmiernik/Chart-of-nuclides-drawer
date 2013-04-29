@@ -4,6 +4,9 @@
 # Ignore this file (no licence information provided)
 nubtab03.asc
 nwc11.txt
+nubtab12.asc
+# test
+test.py
 # Directories
 __pycache__
 old_code

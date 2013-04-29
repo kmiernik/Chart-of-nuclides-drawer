@@ -184,6 +184,24 @@ class Nuclide(object):
                     raise ParameterError("Wrong format of mass defect '{}' was passed".format(mass_defect))
             self._mass_defect = mass_defect
 
+    def half_life_in_seconds(self):
+        """Return half-life in seconds"""
+        t = self.half_life['value']
+        try:
+            t = float(t)
+        except ValueError:
+            if t == 'stable':
+                return -1
+            else:
+                return 0
+        u = self.half_life['unit']
+        if u in self._short_time_units:
+            return t
+        elif u in self._long_time_units:
+            return t * self._long_to_short
+        else:
+            return 0
+
     @property
     def half_life(self):
         """Half-life is returned as a dictionary {value, unit, uncertainity, extrapolated, relation}"""
@@ -630,11 +648,13 @@ class NuclideNwc11(Nuclide):
             elif items[2] == 'lt':
                 result['relation'] = '<' 
             elif items[2] == 'le':
-                result['relation'] = '\u2264' 
+                #result['relation'] = '\u2264' 
+                result['relation'] = '<' 
             elif items[2] == 'gt':
                 result['relation'] = '>' 
             elif items[2] == 'ge':
-                result['relation'] = '\u2265' 
+                #result['relation'] = '\u2265' 
+                result['relation'] = '>' 
             else:
                 result['relation'] = '='
                 result['uncertainity'] = items[2]
