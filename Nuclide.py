@@ -105,14 +105,24 @@ class Nuclide(object):
         super().__init__()
         self.Z = Z
         self.A = A
-        self.mass_defect = mass_defect
-        self.half_life = half_life
-        self.gs_spin = gs_spin
-        self.decay_modes = decay_modes
+
+        if mass_defect is not None:
+            self.mass_defect = mass_defect
+
+        if half_life is not None:
+            self.half_life = half_life
+
+        if gs_spin is not None:
+            self.gs_spin = gs_spin
+
+        if decay_modes is not None:
+            self.decay_modes = decay_modes
+
         if isomers is None:
             self.isomers = []
         else:
             self.isomers = isomers
+
         if comment is None:
             self.comment = ""
         else:
@@ -411,7 +421,7 @@ class NuclideNb03(Nuclide):
                 result['uncertainity'] = float(mass_defect[1])
             else:
                 result['uncertainity'] = '?'
-        except ValueError:
+        except (ValueError, IndexError):
             raise ParameterError(" {} is not valid mass defect string".format(mass_defect))
         return result
 
@@ -497,6 +507,12 @@ class NuclideNb03(Nuclide):
                 if question is not None:
                     if item.count('=') == 0:
                         item = re.sub(r" \?", "=?", item)
+
+                # '...' is used in the nubtab12, whatever it means (?!)
+                # it can't be unpacked in the next line, since there is
+                # no relation symbol
+                if item == "...":
+                    continue
 
                 mode, relation, value = re.split('(=|~|>|<|\u2264|\u2265)',
                                                  item)
