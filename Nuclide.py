@@ -194,23 +194,46 @@ class Nuclide(object):
                     raise ParameterError("Wrong format of mass defect '{}' was passed".format(mass_defect))
             self._mass_defect = mass_defect
 
+    def experimental_mass(self):
+        """Returns experimental mass of the nuclide in MeV"""
+        if self._mass_defect is None:
+            return (None, None)
+        else:
+            try:
+                if self.mass_defect['extrapolated'] == 'True':
+                    return (None, None)
+                M = self.A * 931.494 + float(self.mass_defect['value']) / 1000
+                dM = float(self.mass_defect['uncertainity']) / 1000
+            except KeyError:
+                return (None, None)
+            except TypeError:
+                print('TypeError', self.A, self.mass_defect)
+                return (None, None)
+            return (M, dM)
+
     def half_life_in_seconds(self):
-        """Return half-life in seconds"""
+        """Return half-life and uncertainity in seconds"""
         t = self.half_life['value']
+        dt = self.half_life['uncertainity']
+
         try:
             t = float(t)
+            dt = float(dt)
         except ValueError:
             if t == 'stable':
-                return -1
+                return (-1, 0)
             else:
-                return 0
+                return (0, 0)
+
         u = self.half_life['unit']
         if u in self._short_time_units:
-            return t
+            factor = self._short_time_units.get(u)
+            return (t * factor, dt * factor)
         elif u in self._long_time_units:
-            return t * self._long_to_short
+            factor = self._long_to_short * self._long_time_units.get(u)
+            return (t * factor, dt * factor)
         else:
-            return 0
+            return (0, 0)
 
     @property
     def half_life(self):
