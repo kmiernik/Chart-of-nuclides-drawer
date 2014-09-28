@@ -5,32 +5,10 @@
    
    Distributed under GNU General Public Licence v3
    
-   This Python script loads data from NuBase03 ascii file
+   This Python script loads data from NuBase12 ascii file
    and creates xml document
-   NuBase web page
-   http://amdc.in2p3.fr/web/nubase_en.html
 
-   NuBase2003 ascii format description 
-   (strings are given in Python way i.e [0:3] are characters 0,1,2)
-   based on G. Audi et al Nuc. Phys. A 729(2003) 3
-
-   [0:3] mass number A
-   [3] empty
-   [4:7] atomic number Z
-   [7] 0 for g.s or 1, 2, 3, etc. for isomers
-   [9] redundand - letter W for isomers
-   [10:11] empty
-   [11:17] redundand - mass, element name and letter n, m, etc. for isomers
-   [17] empty
-   [18:38] mass defect and its uncertainity
-   [39:60] isomer excitation energy, uncertainity and code
-   [60:78] half-life, unit uncertainity
-   [78] empty
-   [79:93] g.s. spin and T for isomers
-   [93:105] year of apperance in nubase, reference code
-   [105] empty
-   [105:110] another year (discovery year?)
-   [111:] decay modes
+   See also Nubase2xml.py
 
     Description of xml document structure:
     <!-- Root element -->

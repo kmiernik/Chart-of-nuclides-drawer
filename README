@@ -1,9 +1,17 @@
+=========================
+Chart of nuclides drawer
+=========================
+
+Introduction
+============
+
 This script produces chart of nuclides in svg format from data
-provided in xml document. The chart in svg format is especially suitable
+provided in xml document. The chart in svg format is particularly useful
 for all kinds of presentations or posters since the SVG graphics is scalable
 without loss of quality.
 
-An example output is provided in example.svg file.
+Usage
+======
 
     usage: ChartDrawer.py [-h] [--names] [--halflives] [--magic] [--numbers]
                         [--z Z Z] [--n N N]
@@ -23,30 +31,36 @@ An example output is provided in example.svg file.
     --z Z Z      Atomic number Z range (int), default: [0, 120]
     --n N N      Neutron number N range (int), default: [0, 180]
 
-The Nubase2xml.py script will generate the input xml file from Nubase format
-The NuBase ascii file can be downloaded from:
-http://amdc.in2p3.fr/nubase/nubtab03.asc
-Please note that the database is old (2003) so many values are outdated.
-As soon as expected NuBase2013 is released the Nubase2xml script will 
-be updated to parse new data format.
+Databases
+=========
+
+The Nubase2xml.py script will generate the input xml file from Nubase format.
+There are two versions available - nubtab03.asc and nubtab12.asc - 
+2003 and 2012 editions respectively. For the latter use Nubase12_2xml.py since
+the Nubase authors changed slightly the format.
+See http://amdc.in2p3.fr/nubase/Nubase2012-v3.pdf for more details.
 
 The Nwc2xml.py script will generate xml file from Nuclear Wallet Cards
 ascii format. See http://www.nndc.bnl.gov/wallet/
 Nuclear Waller Cards by J.K. Tulli, National Nuclear Data Center,
 Brookhaven National Laboratory
 
-The generated chart of nuclides is generally following (but not exactly)  the format
-of Karlsruher Chart of Nuclides. The nuclides are coded with colors according to
-primary decay mode:
-Black - stable
-Yellow - Alpha
-Red - B+/EC
-Blue - B-
-Green - fission
-Orange - proton / two-proton emission
-Violet - cluster emission
-Light blue - neutron / two-neutron emission
-Gray - unknown
+
+Map layout
+==========
+
+The generated chart of nuclides is generally following (but not exactly) the
+format of Karlsruher Chart of Nuclides. The nuclides are coded with colors
+according to primary decay mode:
+* Black - stable
+* Yellow - Alpha
+* Red - B+/EC
+* Blue - B-
+* Green - fission
+* Orange - proton / two-proton emission
+* Violet - cluster emission
+* Light blue - neutron / two-neutron emission
+* Gray - unknown
 
 Secondary decay mode is indicated by triangle. A large triangle is used if
 secondary decay mode branching is larger then 5%. Otherwise small triangle is
