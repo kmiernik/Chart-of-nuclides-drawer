@@ -7,6 +7,8 @@ nwc11.txt
 nubtab12.asc
 # test
 test.py
+# Output
+*.svg
 # Directories
 __pycache__
 old_code

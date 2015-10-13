@@ -809,14 +809,14 @@
         </decay_modes>
         <comment>10Go16tj 2010</comment>
     </nuclide>
-    <nuclide A="14" Z="9" element="F" id="14F">
-        <mass_defect extrapolated="False" uncertainity="40.0" value="31960.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="60" unit="ys" value="500"/>
-        <spin extrapolated="False" value="2-"/>
+    <nuclide A="15" Z="4" element="Be" id="15Be">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="49760.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="200"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>10Go16tj 2010</comment>
+        <comment>03Ba47i</comment>
     </nuclide>
     <nuclide A="15" Z="5" element="B" id="15B">
         <mass_defect extrapolated="False" uncertainity="21.0" value="28958.0"/>
@@ -1374,25 +1374,23 @@
         </decay_modes>
         <comment>98 95Pi03td 1974</comment>
     </nuclide>
-    <nuclide A="20" Z="12" element="Mg" id="20Mg">
-        <mass_defect extrapolated="False" uncertainity="27.0" value="17559.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="6" unit="ms" value="90"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="21" Z="5" element="B" id="21B">
+        <mass_defect extrapolated="True" uncertainity="900.0" value="75720.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="260"/>
+        <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="16" value="30.4"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>98 95Pi03td 1974</comment>
+        <comment>04 03Oz01i</comment>
     </nuclide>
-    <nuclide A="20" Z="12" element="Mg" id="20Mg">
-        <mass_defect extrapolated="False" uncertainity="27.0" value="17559.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="6" unit="ms" value="90"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="21" Z="6" element="C" id="21C">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="45640.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="30"/>
+        <spin extrapolated="True" value="1/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="16" value="30.4"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>98 95Pi03td 1974</comment>
+        <comment>04 93Po.Ai</comment>
     </nuclide>
     <nuclide A="21" Z="7" element="N" id="21N">
         <mass_defect extrapolated="False" uncertainity="100.0" value="25250.0"/>
@@ -1461,15 +1459,14 @@
         </decay_modes>
         <comment>04          1963</comment>
     </nuclide>
-    <nuclide A="21" Z="12" element="Mg" id="21Mg">
-        <mass_defect extrapolated="False" uncertainity="16.0" value="10914.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="2" unit="ms" value="122"/>
-        <spin extrapolated="False" value="5/2+"/>
+    <nuclide A="21" Z="13" element="Al" id="21Al">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="26990.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="35"/>
+        <spin extrapolated="True" value="5/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="10" value="32.6"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>04          1963</comment>
+        <comment>04 93Po.Ai</comment>
     </nuclide>
     <nuclide A="22" Z="6" element="C" id="22C">
         <mass_defect extrapolated="False" uncertainity="250.0" value="53590.0"/>
@@ -1711,15 +1708,14 @@
         </decay_modes>
         <comment>07 97Bl04td 1986</comment>
     </nuclide>
-    <nuclide A="23" Z="14" element="Si" id="23Si">
-        <mass_defect extrapolated="True" uncertainity="500.0" value="23700.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="ms" value="42.3"/>
-        <spin extrapolated="True" value="3/2+ "/>
+    <nuclide A="24" Z="7" element="N" id="24N">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="46940.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="52"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="~" uncertainity="0" value="88"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>07 97Bl04td 1986</comment>
+        <comment>07 93Po.Ai</comment>
     </nuclide>
     <nuclide A="24" Z="8" element="O" id="24O">
         <mass_defect extrapolated="False" uncertainity="110.0" value="18500.0"/>
@@ -1741,15 +1737,14 @@
         </decay_modes>
         <comment>07 07Su05t  1970</comment>
     </nuclide>
-    <nuclide A="24" Z="9" element="F" id="24F">
-        <mass_defect extrapolated="False" uncertainity="70.0" value="7560.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="16" unit="ms" value="384"/>
-        <spin extrapolated="False" value="(1,2,3)+"/>
+    <nuclide A="24" Z="10" element="Ne" id="24Ne">
+        <mass_defect extrapolated="False" uncertainity="0.5" value="-5951.6"/>
+        <half_life extrapolated="False" relation="=" uncertainity="0.02" unit="m" value="3.38"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
             <decay mode="b-" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b-n" relation="&lt;" uncertainity="0" value="5.9"/>
         </decay_modes>
-        <comment>07 07Su05t  1970</comment>
+        <comment>07          1956</comment>
     </nuclide>
     <nuclide A="24" Z="11" element="Na" id="24Na">
         <mass_defect extrapolated="False" uncertainity="0.04" value="-8417.96"/>
@@ -1850,16 +1845,16 @@
         </decay_modes>
         <comment></comment>
     </nuclide>
-    <nuclide A="24" Z="15" element="P" id="24P">
-        <mass_defect extrapolated="True" uncertainity="500.0" value="33320.0"/>
-        <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-        <spin extrapolated="True" value="1+ "/>
+    <nuclide A="25" Z="7" element="N" id="25N">
+        <mass_defect extrapolated="True" uncertainity="500.0" value="55980.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="260"/>
+        <spin extrapolated="True" value="1/2- "/>
         <decay_modes>
-            <decay mode="p" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="2n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="0"/>
         </decay_modes>
-        <comment></comment>
+        <comment>09 99Sa06id</comment>
     </nuclide>
     <nuclide A="25" Z="8" element="O" id="25O">
         <mass_defect extrapolated="False" uncertainity="110.0" value="27350.0"/>
@@ -1945,15 +1940,14 @@
         </decay_modes>
         <comment>09          1963</comment>
     </nuclide>
-    <nuclide A="25" Z="14" element="Si" id="25Si">
-        <mass_defect extrapolated="False" uncertainity="10.0" value="3827.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="3" unit="ms" value="220"/>
-        <spin extrapolated="False" value="5/2+"/>
+    <nuclide A="25" Z="15" element="P" id="25P">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="19740.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="30"/>
+        <spin extrapolated="True" value="1/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="2" value="35"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>09          1963</comment>
+        <comment>09 93Po.Ai</comment>
     </nuclide>
     <nuclide A="26" Z="8" element="O" id="26O">
         <mass_defect extrapolated="False" uncertainity="160.0" value="34730.0"/>
@@ -2058,25 +2052,24 @@
         </decay_modes>
         <comment>00 04Th09td 1983</comment>
     </nuclide>
-    <nuclide A="26" Z="15" element="P" id="26P">
-        <mass_defect extrapolated="True" uncertainity="200.0" value="10970.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="ms" value="43.7"/>
-        <spin extrapolated="False" value="(3+)"/>
+    <nuclide A="26" Z="16" element="S" id="26S">
+        <mass_defect extrapolated="True" uncertainity="600.0" value="27080.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="79"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="2" value="39"/>
+            <decay mode="2p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>00 04Th09td 1983</comment>
+        <comment>11Fo.Ai</comment>
     </nuclide>
-    <nuclide A="26" Z="15" element="P" id="26P">
-        <mass_defect extrapolated="True" uncertainity="200.0" value="10970.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="ms" value="43.7"/>
-        <spin extrapolated="False" value="(3+)"/>
+    <nuclide A="27" Z="8" element="O" id="27O">
+        <mass_defect extrapolated="True" uncertainity="500.0" value="44450.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="260"/>
+        <spin extrapolated="True" value="3/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="2" value="39"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="2n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>00 04Th09td 1983</comment>
+        <comment>99Sa06i</comment>
     </nuclide>
     <nuclide A="27" Z="9" element="F" id="27F">
         <mass_defect extrapolated="False" uncertainity="190.0" value="24630.0"/>
@@ -2184,25 +2177,25 @@
         </decay_modes>
         <comment>11          1986</comment>
     </nuclide>
-    <nuclide A="27" Z="16" element="S" id="27S">
-        <mass_defect extrapolated="True" uncertainity="400.0" value="17030.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.5" unit="ms" value="15.5"/>
-        <spin extrapolated="False" value="(5/2+)"/>
+    <nuclide A="28" Z="8" element="O" id="28O">
+        <mass_defect extrapolated="True" uncertainity="700.0" value="52080.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="100"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="9" value="2.3"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="2n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="0"/>
         </decay_modes>
-        <comment>11          1986</comment>
+        <comment>98Po.Ai</comment>
     </nuclide>
-    <nuclide A="27" Z="16" element="S" id="27S">
-        <mass_defect extrapolated="True" uncertainity="400.0" value="17030.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.5" unit="ms" value="15.5"/>
-        <spin extrapolated="False" value="(5/2+)"/>
+    <nuclide A="28" Z="9" element="F" id="28F">
+        <mass_defect extrapolated="False" uncertainity="200.0" value="32920.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="40"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="9" value="2.3"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>11          1986</comment>
+        <comment>09 93Po.Ai</comment>
     </nuclide>
     <nuclide A="28" Z="10" element="Ne" id="28Ne">
         <mass_defect extrapolated="False" uncertainity="100.0" value="11290.0"/>
@@ -2419,25 +2412,23 @@
         </decay_modes>
         <comment>12 79Vi01d  1964</comment>
     </nuclide>
-    <nuclide A="29" Z="16" element="S" id="29S">
-        <mass_defect extrapolated="False" uncertainity="50.0" value="-3160.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="4" unit="ms" value="188"/>
-        <spin extrapolated="True" value="5/2+ "/>
+    <nuclide A="29" Z="17" element="Cl" id="29Cl">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="13770.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="20"/>
+        <spin extrapolated="True" value="3/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="10" value="46.4"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>12 79Vi01d  1964</comment>
+        <comment>12 93Po.Ai</comment>
     </nuclide>
-    <nuclide A="29" Z="16" element="S" id="29S">
-        <mass_defect extrapolated="False" uncertainity="50.0" value="-3160.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="4" unit="ms" value="188"/>
-        <spin extrapolated="True" value="5/2+ "/>
+    <nuclide A="30" Z="9" element="F" id="30F">
+        <mass_defect extrapolated="True" uncertainity="600.0" value="48110.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="260"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="10" value="46.4"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>12 79Vi01d  1964</comment>
+        <comment>10 99Sa06i</comment>
     </nuclide>
     <nuclide A="30" Z="10" element="Ne" id="30Ne">
         <mass_defect extrapolated="False" uncertainity="280.0" value="23040.0"/>
@@ -2515,23 +2506,24 @@
         </decay_modes>
         <comment>10 11So11t  1961</comment>
     </nuclide>
-    <nuclide A="30" Z="16" element="S" id="30S">
-        <mass_defect extrapolated="False" uncertainity="0.4" value="-14059.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.0017" unit="s" value="1.1759"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="30" Z="17" element="Cl" id="30Cl">
+        <mass_defect extrapolated="True" uncertainity="200.0" value="4440.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="30"/>
+        <spin extrapolated="True" value="3+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>10 11So11t  1961</comment>
+        <comment>10 93Po.Ai</comment>
     </nuclide>
-    <nuclide A="30" Z="16" element="S" id="30S">
-        <mass_defect extrapolated="False" uncertainity="0.4" value="-14059.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.0017" unit="s" value="1.1759"/>
+    <nuclide A="30" Z="18" element="Ar" id="30Ar">
+        <mass_defect extrapolated="True" uncertainity="500.0" value="21490.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="20"/>
         <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="2p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>10 11So11t  1961</comment>
+        <comment>93Po.Ai</comment>
     </nuclide>
     <nuclide A="31" Z="9" element="F" id="31F">
         <mass_defect extrapolated="True" uncertainity="530.0" value="55620.0"/>
@@ -2808,23 +2800,14 @@
         </isomers>
         <comment></comment>
     </nuclide>
-    <nuclide A="32" Z="19" element="K" id="32K">
-        <mass_defect extrapolated="True" uncertainity="500.0" value="21100.0"/>
-        <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-        <spin extrapolated="True" value="1+ "/>
+    <nuclide A="33" Z="10" element="Ne" id="33Ne">
+        <mass_defect extrapolated="True" uncertainity="600.0" value="46000.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="260"/>
+        <spin extrapolated="True" value="7/2- "/>
         <decay_modes>
-            <decay mode="p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="950" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="p" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Gamma spectometry Mirrori</comment>
-            </isomer>
-        </isomers>
-        <comment></comment>
+        <comment>11 02No11i</comment>
     </nuclide>
     <nuclide A="33" Z="11" element="Na" id="33Na">
         <mass_defect extrapolated="True" uncertainity="600.0" value="23970.0"/>
@@ -2921,15 +2904,14 @@
         </decay_modes>
         <comment>11          1964</comment>
     </nuclide>
-    <nuclide A="33" Z="18" element="Ar" id="33Ar">
-        <mass_defect extrapolated="False" uncertainity="0.4" value="-9384.3"/>
-        <half_life extrapolated="False" relation="=" uncertainity="2.0" unit="ms" value="173.0"/>
-        <spin extrapolated="False" value="1/2+"/>
+    <nuclide A="33" Z="19" element="K" id="33K">
+        <mass_defect extrapolated="True" uncertainity="200.0" value="7040.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="25"/>
+        <spin extrapolated="True" value="3/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="10" value="38.7"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>11          1964</comment>
+        <comment>11 93Po.Ai</comment>
     </nuclide>
     <nuclide A="34" Z="10" element="Ne" id="34Ne">
         <mass_defect extrapolated="True" uncertainity="510.0" value="52840.0"/>
@@ -3060,43 +3042,23 @@
         </isomers>
         <comment>12          1966</comment>
     </nuclide>
-    <nuclide A="34" Z="18" element="Ar" id="34Ar">
-        <mass_defect extrapolated="False" uncertainity="0.08" value="-18378.29"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="ms" value="843.8"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="34" Z="19" element="K" id="34K">
+        <mass_defect extrapolated="True" uncertainity="300.0" value="-1220.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="40"/>
+        <spin extrapolated="True" value="1+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="7934" extrapolated="False" uncertainity="5">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Reaction energy difference 12          1969</comment>
-            </isomer>
-        </isomers>
-        <comment>12          1966</comment>
+        <comment>12 93Po.Ai</comment>
     </nuclide>
-    <nuclide A="34" Z="18" element="Ar" id="34Ar">
-        <mass_defect extrapolated="False" uncertainity="0.08" value="-18378.29"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="ms" value="843.8"/>
+    <nuclide A="34" Z="20" element="Ca" id="34Ca">
+        <mass_defect extrapolated="True" uncertainity="300.0" value="13850.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="35"/>
         <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="2p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="7934" extrapolated="False" uncertainity="5">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Reaction energy difference 12          1969</comment>
-            </isomer>
-        </isomers>
-        <comment>12          1966</comment>
+        <comment>12 93Po.Ai</comment>
     </nuclide>
     <nuclide A="35" Z="11" element="Na" id="35Na">
         <mass_defect extrapolated="True" uncertainity="590.0" value="37840.0"/>
@@ -3224,15 +3186,14 @@
         </decay_modes>
         <comment>11          1985</comment>
     </nuclide>
-    <nuclide A="35" Z="20" element="Ca" id="35Ca">
-        <mass_defect extrapolated="True" uncertainity="200.0" value="4790.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.2" unit="ms" value="25.7"/>
-        <spin extrapolated="True" value="1/2+ "/>
+    <nuclide A="36" Z="11" element="Na" id="36Na">
+        <mass_defect extrapolated="True" uncertainity="590.0" value="45910.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="180"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="14" value="95.9"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>11          1985</comment>
+        <comment>12</comment>
     </nuclide>
     <nuclide A="36" Z="12" element="Mg" id="36Mg">
         <mass_defect extrapolated="False" uncertainity="460.0" value="20380.0"/>
@@ -3637,24 +3598,14 @@
         <decay_modes>
             <decay mode="b+" relation="=" uncertainity="0" value="100"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="670" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="p" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Gamma spectometry </comment>
-            </isomer>
-        </isomers>
         <comment>08 11Pa38t  1966</comment>
     </nuclide>
-    <nuclide A="38" Z="20" element="Ca" id="38Ca">
-        <mass_defect extrapolated="False" uncertainity="0.19" value="-22058.5"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.36" unit="ms" value="443.77"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="38" Z="21" element="Sc" id="38Sc">
+        <mass_defect extrapolated="True" uncertainity="200.0" value="-4550.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="True" value="2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
         <isomers>
             <isomer energy="670" extrapolated="True" uncertainity="100">
@@ -3666,45 +3617,25 @@
                 <comment>Gamma spectometry </comment>
             </isomer>
         </isomers>
-        <comment>08 11Pa38t  1966</comment>
+        <comment>08 94Bl10i</comment>
     </nuclide>
-    <nuclide A="38" Z="20" element="Ca" id="38Ca">
-        <mass_defect extrapolated="False" uncertainity="0.19" value="-22058.5"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.36" unit="ms" value="443.77"/>
+    <nuclide A="38" Z="22" element="Ti" id="38Ti">
+        <mass_defect extrapolated="True" uncertainity="300.0" value="10670.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="120"/>
         <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="2p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="670" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="p" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Gamma spectometry </comment>
-            </isomer>
-        </isomers>
-        <comment>08 11Pa38t  1966</comment>
+        <comment>08 96Bl21i</comment>
     </nuclide>
-    <nuclide A="38" Z="20" element="Ca" id="38Ca">
-        <mass_defect extrapolated="False" uncertainity="0.19" value="-22058.5"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.36" unit="ms" value="443.77"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="39" Z="12" element="Mg" id="39Mg">
+        <mass_defect extrapolated="True" uncertainity="510.0" value="42280.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="180"/>
+        <spin extrapolated="True" value="7/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="670" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="p" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Gamma spectometry </comment>
-            </isomer>
-        </isomers>
-        <comment>08 11Pa38t  1966</comment>
+        <comment>07</comment>
     </nuclide>
     <nuclide A="39" Z="13" element="Al" id="39Al">
         <mass_defect extrapolated="True" uncertainity="500.0" value="21000.0"/>
@@ -3862,16 +3793,16 @@
         </decay_modes>
         <comment>06 04Gr20td 1989</comment>
     </nuclide>
-    <nuclide A="40" Z="14" element="Si" id="40Si">
-        <mass_defect extrapolated="False" uncertainity="230.0" value="5430.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.0" unit="ms" value="33.0"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="40" Z="15" element="P" id="40P">
+        <mass_defect extrapolated="False" uncertainity="110.0" value="-8070.0"/>
+        <half_life extrapolated="False" relation="=" uncertainity="8" unit="ms" value="150"/>
+        <spin extrapolated="False" value="(2-,3-)"/>
         <decay_modes>
             <decay mode="b-" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="21" value="15.8"/>
             <decay mode="b-2n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>06 04Gr20td 1989</comment>
+        <comment>04          1979</comment>
     </nuclide>
     <nuclide A="40" Z="16" element="S" id="40S">
         <mass_defect extrapolated="False" uncertainity="4.0" value="-22838.0"/>
@@ -4074,6 +4005,15 @@
         <decay_modes>
             <decay mode="ec" relation="=" uncertainity="0" value="100"/>
         </decay_modes>
+        <isomers>
+            <isomer energy="5817.2" extrapolated="False" uncertainity="0.9">
+                <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-15" value="28"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 02</comment>
+            </isomer>
+        </isomers>
         <comment>02 12Jo04t  1939</comment>
     </nuclide>
     <nuclide A="41" Z="21" element="Sc" id="41Sc">
@@ -4260,14 +4200,14 @@
         </decay_modes>
         <comment>01 09Ku19t  1964</comment>
     </nuclide>
-    <nuclide A="42" Z="22" element="Ti" id="42Ti">
-        <mass_defect extrapolated="False" uncertainity="0.28" value="-25104.66"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.45" unit="ms" value="208.14"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="42" Z="23" element="V" id="42V">
+        <mass_defect extrapolated="True" uncertainity="300.0" value="-7620.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="55"/>
+        <spin extrapolated="True" value="2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>01 09Ku19t  1964</comment>
+        <comment>01 92Bo37i</comment>
     </nuclide>
     <nuclide A="42" Z="24" element="Cr" id="42Cr">
         <mass_defect extrapolated="True" uncertainity="400.0" value="6240.0"/>
@@ -4676,15 +4616,14 @@
         </decay_modes>
         <comment>11 07Do17d  1987</comment>
     </nuclide>
-    <nuclide A="44" Z="24" element="Cr" id="44Cr">
-        <mass_defect extrapolated="True" uncertainity="300.0" value="-13640.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="ms" value="42.8"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="44" Z="25" element="Mn" id="44Mn">
+        <mass_defect extrapolated="True" uncertainity="500.0" value="6660.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="105"/>
+        <spin extrapolated="True" value="2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="9" value="14.0"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>11 07Do17d  1987</comment>
+        <comment>11</comment>
     </nuclide>
     <nuclide A="45" Z="14" element="Si" id="45Si">
         <mass_defect extrapolated="True" uncertainity="700.0" value="37210.0"/>
@@ -4850,24 +4789,14 @@
         </isomers>
         <comment>08          1974</comment>
     </nuclide>
-    <nuclide A="45" Z="24" element="Cr" id="45Cr">
-        <mass_defect extrapolated="False" uncertainity="40.0" value="-19510.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="ms" value="60.9"/>
+    <nuclide A="45" Z="25" element="Mn" id="45Mn">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="-5130.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="70"/>
         <spin extrapolated="True" value="7/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="8" value="34.4"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="107" extrapolated="False" uncertainity="1">
-                <half_life extrapolated="False" relation="=" uncertainity="?" unit="us" value="&gt;80"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Code ' ' is not documented' Uncertainity of energy is larger then energy itself 11 11Ho02etj2011</comment>
-            </isomer>
-        </isomers>
-        <comment>08          1974</comment>
+        <comment>08 92Bo37i</comment>
     </nuclide>
     <nuclide A="45" Z="26" element="Fe" id="45Fe">
         <mass_defect extrapolated="True" uncertainity="400.0" value="13430.0"/>
@@ -5420,16 +5349,16 @@
         </decay_modes>
         <comment>06 11Po09td 2000</comment>
     </nuclide>
-    <nuclide A="48" Z="28" element="Ni" id="48Ni">
-        <mass_defect extrapolated="True" uncertainity="510.0" value="16480.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.8" unit="ms" value="2.8"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="49" Z="16" element="S" id="49S">
+        <mass_defect extrapolated="True" uncertainity="670.0" value="21200.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="200"/>
+        <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="2p" relation="=" uncertainity="20" value="70"/>
-            <decay mode="b+" relation="=" uncertainity="20" value="30"/>
-            <decay mode="b+p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-2n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>06 11Po09td 2000</comment>
+        <comment>08 90Le03i</comment>
     </nuclide>
     <nuclide A="49" Z="17" element="Cl" id="49Cl">
         <mass_defect extrapolated="True" uncertainity="600.0" value="1150.0"/>
@@ -5554,15 +5483,14 @@
         </decay_modes>
         <comment>08 96Fa09j  1970</comment>
     </nuclide>
-    <nuclide A="49" Z="26" element="Fe" id="49Fe">
-        <mass_defect extrapolated="False" uncertainity="24.0" value="-24751.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.3" unit="ms" value="64.7"/>
-        <spin extrapolated="False" value="(7/2-)"/>
+    <nuclide A="49" Z="27" element="Co" id="49Co">
+        <mass_defect extrapolated="True" uncertainity="700.0" value="-10330.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="35"/>
+        <spin extrapolated="True" value="7/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="4" value="56.7"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>08 96Fa09j  1970</comment>
+        <comment>08 94Bl10i</comment>
     </nuclide>
     <nuclide A="49" Z="28" element="Ni" id="49Ni">
         <mass_defect extrapolated="True" uncertainity="800.0" value="7170.0"/>
@@ -6243,15 +6171,14 @@
         </decay_modes>
         <comment>09 07Do17td 1976</comment>
     </nuclide>
-    <nuclide A="53" Z="28" element="Ni" id="53Ni">
-        <mass_defect extrapolated="False" uncertainity="25.0" value="-29631.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.7" unit="ms" value="55.2"/>
-        <spin extrapolated="True" value="7/2- "/>
+    <nuclide A="53" Z="29" element="Cu" id="53Cu">
+        <mass_defect extrapolated="True" uncertainity="800.0" value="-14350.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="10" value="23.4"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>09 07Do17td 1976</comment>
+        <comment>09 93Bl.Ai</comment>
     </nuclide>
     <nuclide A="54" Z="19" element="K" id="54K">
         <mass_defect extrapolated="True" uncertainity="600.0" value="-5000.0"/>
@@ -6413,25 +6340,14 @@
         </isomers>
         <comment>06          1977</comment>
     </nuclide>
-    <nuclide A="54" Z="28" element="Ni" id="54Ni">
-        <mass_defect extrapolated="False" uncertainity="50.0" value="-39220.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="7" unit="ms" value="104"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="54" Z="29" element="Cu" id="54Cu">
+        <mass_defect extrapolated="True" uncertainity="500.0" value="-21740.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="75"/>
+        <spin extrapolated="True" value="3+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="6457" extrapolated="False" uncertainity="3">
-                <half_life extrapolated="False" relation="=" uncertainity="4" unit="ns" value="152"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="2" value="64"/>
-                    <decay mode="p" relation="=" uncertainity="2" value="36"/>
-                </decay_modes>
-                <comment>Gamma spectometry 08Ru09etj2008</comment>
-            </isomer>
-        </isomers>
-        <comment>06          1977</comment>
+        <comment>06</comment>
     </nuclide>
     <nuclide A="54" Z="30" element="Zn" id="54Zn">
         <mass_defect extrapolated="True" uncertainity="700.0" value="-7420.0"/>
@@ -7247,15 +7163,14 @@
         </decay_modes>
         <comment>03          1981</comment>
     </nuclide>
-    <nuclide A="59" Z="30" element="Zn" id="59Zn">
-        <mass_defect extrapolated="False" uncertainity="0.8" value="-47215.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.8" unit="ms" value="182.0"/>
-        <spin extrapolated="False" value="3/2-"/>
+    <nuclide A="59" Z="31" element="Ga" id="59Ga">
+        <mass_defect extrapolated="True" uncertainity="170.0" value="-33970.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="43"/>
+        <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="3" value="0.10"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>03          1981</comment>
+        <comment>05St29t</comment>
     </nuclide>
     <nuclide A="59" Z="32" element="Ge" id="59Ge">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-16310.0"/>
@@ -7960,15 +7875,14 @@
         </decay_modes>
         <comment>09 02Lo13td 1991</comment>
     </nuclide>
-    <nuclide A="63" Z="32" element="Ge" id="63Ge">
-        <mass_defect extrapolated="False" uncertainity="40.0" value="-46920.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="8" unit="ms" value="142"/>
+    <nuclide A="63" Z="33" element="As" id="63As">
+        <mass_defect extrapolated="True" uncertainity="200.0" value="-33630.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="43"/>
         <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="p" relation="=" uncertainity="0" value="100#"/>
         </decay_modes>
-        <comment>09 02Lo13td 1991</comment>
+        <comment>09</comment>
     </nuclide>
     <nuclide A="64" Z="23" element="V" id="64V">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-16170.0"/>
@@ -8819,14 +8733,14 @@
         </decay_modes>
         <comment>12          1990</comment>
     </nuclide>
-    <nuclide A="68" Z="34" element="Se" id="68Se">
-        <mass_defect extrapolated="False" uncertainity="0.5" value="-54189.4"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.7" unit="s" value="35.5"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="68" Z="35" element="Br" id="68Br">
+        <mass_defect extrapolated="True" uncertainity="310.0" value="-38440.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-06" value="1.5"/>
+        <spin extrapolated="True" value="3+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>12          1990</comment>
+        <comment>12 95Bl06i</comment>
     </nuclide>
     <nuclide A="69" Z="25" element="Mn" id="69Mn">
         <mass_defect extrapolated="True" uncertainity="600.0" value="-24540.0"/>
@@ -9540,23 +9454,14 @@
         <decay_modes>
             <decay mode="b+" relation="=" uncertainity="0" value="100"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="100" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="True" relation="=" uncertainity="?" unit="us" value="1"/>
-                <decay_modes>
-                    <decay mode="p" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Code ' ' is not documented' Uncertainity of energy is larger then energy itself </comment>
-            </isomer>
-        </isomers>
         <comment>10 03Pi03t  1973</comment>
     </nuclide>
-    <nuclide A="72" Z="36" element="Kr" id="72Kr">
-        <mass_defect extrapolated="False" uncertainity="8.0" value="-53941.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.18" unit="s" value="17.16"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="72" Z="37" element="Rb" id="72Rb">
+        <mass_defect extrapolated="True" uncertainity="500.0" value="-38120.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-06" value="1.5"/>
+        <spin extrapolated="True" value="1+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
         <isomers>
             <isomer energy="100" extrapolated="True" uncertainity="100">
@@ -9567,7 +9472,7 @@
                 <comment>Code ' ' is not documented' Uncertainity of energy is larger then energy itself </comment>
             </isomer>
         </isomers>
-        <comment>10 03Pi03t  1973</comment>
+        <comment>95Bl06i</comment>
     </nuclide>
     <nuclide A="73" Z="26" element="Fe" id="73Fe">
         <mass_defect extrapolated="True" uncertainity="700.0" value="-22620.0"/>
@@ -9733,39 +9638,17 @@
                 </decay_modes>
                 <comment>Gamma spectometry 04          1993</comment>
             </isomer>
-            <isomer energy="430" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="?" relation="" uncertainity="" value=""/>
-                </decay_modes>
-                <comment>Gamma spectometry </comment>
-            </isomer>
-            <isomer energy="3230" extrapolated="True" uncertainity="110">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="p" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Proton decay 93Ba61jd 1993</comment>
-            </isomer>
         </isomers>
         <comment>04          1972</comment>
     </nuclide>
-    <nuclide A="73" Z="36" element="Kr" id="73Kr">
-        <mass_defect extrapolated="False" uncertainity="7.0" value="-56552.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.0" unit="s" value="27.3"/>
-        <spin extrapolated="False" value="3/2-"/>
+    <nuclide A="73" Z="37" element="Rb" id="73Rb">
+        <mass_defect extrapolated="True" uncertainity="100.0" value="-46080.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="30"/>
+        <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="3" value="0.25"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
         <isomers>
-            <isomer energy="433.66" extrapolated="False" uncertainity="0.12">
-                <half_life extrapolated="False" relation="=" uncertainity="10" unit="ns" value="107"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Gamma spectometry 04          1993</comment>
-            </isomer>
             <isomer energy="430" extrapolated="True" uncertainity="100">
                 <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
                 <decay_modes>
@@ -9781,7 +9664,7 @@
                 <comment>Proton decay 93Ba61jd 1993</comment>
             </isomer>
         </isomers>
-        <comment>04          1972</comment>
+        <comment>04 96Pf01i</comment>
     </nuclide>
     <nuclide A="73" Z="38" element="Sr" id="73Sr">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-31950.0"/>
@@ -10326,24 +10209,14 @@
         </isomers>
         <comment>12          1977</comment>
     </nuclide>
-    <nuclide A="77" Z="30" element="Zn" id="77Zn">
-        <mass_defect extrapolated="False" uncertainity="2.0" value="-58789.2"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.05" unit="s" value="2.08"/>
-        <spin extrapolated="False" value="(7/2+)"/>
+    <nuclide A="77" Z="31" element="Ga" id="77Ga">
+        <mass_defect extrapolated="False" uncertainity="2.4" value="-65992.3"/>
+        <half_life extrapolated="False" relation="=" uncertainity="0.2" unit="s" value="13.2"/>
+        <spin extrapolated="False" value="3/2(-)"/>
         <decay_modes>
             <decay mode="b-" relation="=" uncertainity="0" value="100"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="772.440" extrapolated="False" uncertainity="0.015">
-                <half_life extrapolated="False" relation="=" uncertainity="0.10" unit="s" value="1.05"/>
-                <decay_modes>
-                    <decay mode="b-" relation="=" uncertainity="7" value="66"/>
-                    <decay mode="it" relation="=" uncertainity="7" value="34"/>
-                </decay_modes>
-                <comment>Gamma spectometry 12 09Pa35j  1986</comment>
-            </isomer>
-        </isomers>
-        <comment>12          1977</comment>
+        <comment>12          1968</comment>
     </nuclide>
     <nuclide A="77" Z="32" element="Ge" id="77Ge">
         <mass_defect extrapolated="False" uncertainity="0.05" value="-71212.86"/>
@@ -10361,32 +10234,17 @@
                 </decay_modes>
                 <comment>Gamma spectometry 12          1947</comment>
             </isomer>
-            <isomer energy="475.48" extrapolated="False" uncertainity="0.04">
-                <half_life extrapolated="False" relation="=" uncertainity="2.5" unit="us" value="114.0"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Gamma spectometry 12          1957</comment>
-            </isomer>
         </isomers>
         <comment>12          1939</comment>
     </nuclide>
-    <nuclide A="77" Z="32" element="Ge" id="77Ge">
-        <mass_defect extrapolated="False" uncertainity="0.05" value="-71212.86"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.003" unit="h" value="11.211"/>
-        <spin extrapolated="False" value="7/2+"/>
+    <nuclide A="77" Z="33" element="As" id="77As">
+        <mass_defect extrapolated="False" uncertainity="1.7" value="-73916.3"/>
+        <half_life extrapolated="False" relation="=" uncertainity="0.05" unit="h" value="38.79"/>
+        <spin extrapolated="False" value="3/2-"/>
         <decay_modes>
             <decay mode="b-" relation="=" uncertainity="0" value="100"/>
         </decay_modes>
         <isomers>
-            <isomer energy="159.71" extrapolated="False" uncertainity="0.06">
-                <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="s" value="53.7"/>
-                <decay_modes>
-                    <decay mode="b-" relation="=" uncertainity="2" value="81"/>
-                    <decay mode="it" relation="=" uncertainity="2" value="19"/>
-                </decay_modes>
-                <comment>Gamma spectometry 12          1947</comment>
-            </isomer>
             <isomer energy="475.48" extrapolated="False" uncertainity="0.04">
                 <half_life extrapolated="False" relation="=" uncertainity="2.5" unit="us" value="114.0"/>
                 <decay_modes>
@@ -10395,7 +10253,7 @@
                 <comment>Gamma spectometry 12          1957</comment>
             </isomer>
         </isomers>
-        <comment>12          1939</comment>
+        <comment>12          1951</comment>
     </nuclide>
     <nuclide A="77" Z="34" element="Se" id="77Se">
         <mass_defect extrapolated="False" uncertainity="0.06" value="-74599.48"/>
@@ -11170,15 +11028,16 @@
         </decay_modes>
         <comment>08          1997</comment>
     </nuclide>
-    <nuclide A="81" Z="40" element="Zr" id="81Zr">
-        <mass_defect extrapolated="False" uncertainity="160.0" value="-58400.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="s" value="5.5"/>
-        <spin extrapolated="False" value="(3/2-)"/>
+    <nuclide A="81" Z="41" element="Nb" id="81Nb">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="-46950.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="44"/>
+        <spin extrapolated="True" value="3/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="2" value="0.12"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b+p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>08          1997</comment>
+        <comment>08 00We.Ai</comment>
     </nuclide>
     <nuclide A="82" Z="29" element="Cu" id="82Cu">
         <mass_defect extrapolated="True" uncertainity="800.0" value="-25670.0"/>
@@ -11977,15 +11836,14 @@
         </decay_modes>
         <comment>97 97Hu15td 1992</comment>
     </nuclide>
-    <nuclide A="85" Z="42" element="Mo" id="85Mo">
-        <mass_defect extrapolated="False" uncertainity="16.0" value="-57510.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.2" unit="s" value="3.2"/>
-        <spin extrapolated="False" value="(1/2-)"/>
+    <nuclide A="85" Z="43" element="Tc" id="85Tc">
+        <mass_defect extrapolated="True" uncertainity="400.0" value="-46030.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="110"/>
+        <spin extrapolated="True" value="1/2- "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>97 97Hu15td 1992</comment>
+        <comment>00We.Ai</comment>
     </nuclide>
     <nuclide A="86" Z="31" element="Ga" id="86Ga">
         <mass_defect extrapolated="True" uncertainity="700.0" value="-34460.0"/>
@@ -12895,6 +12753,13 @@
                     <decay mode="it" relation="=" uncertainity="0" value="100"/>
                 </decay_modes>
                 <comment>Gamma spectometry 98          1981</comment>
+            </isomer>
+            <isomer energy="382.01" extrapolated="False" uncertainity="0.25">
+                <half_life extrapolated="False" relation="=" uncertainity="0.08" unit="ms" value="6.19"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 98          1967</comment>
             </isomer>
             <isomer energy="1880.21" extrapolated="False" uncertainity="0.20">
                 <half_life extrapolated="False" relation="=" uncertainity="13" unit="ns" value="472"/>
@@ -15959,15 +15824,14 @@
         </decay_modes>
         <comment>09          1981</comment>
     </nuclide>
-    <nuclide A="103" Z="50" element="Sn" id="103Sn">
-        <mass_defect extrapolated="False" uncertainity="70.0" value="-66970.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.2" unit="s" value="7.0"/>
+    <nuclide A="103" Z="51" element="Sb" id="103Sb">
+        <mass_defect extrapolated="True" uncertainity="300.0" value="-56180.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="50"/>
         <spin extrapolated="True" value="5/2+ "/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-            <decay mode="b+p" relation="=" uncertainity="1" value="1.2"/>
+            <decay mode="p" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>09          1981</comment>
+        <comment>11Hi.Ai</comment>
     </nuclide>
     <nuclide A="104" Z="38" element="Sr" id="104Sr">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-44110.0"/>
@@ -17144,6 +17008,13 @@
                 </decay_modes>
                 <comment>Gamma spectometry 06          1966</comment>
             </isomer>
+            <isomer energy="2101.8" extrapolated="False" uncertainity="0.2">
+                <half_life extrapolated="False" relation="=" uncertainity="6" unit="ms" value="209"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 06          1963</comment>
+            </isomer>
         </isomers>
         <comment>06          1948</comment>
     </nuclide>
@@ -18128,6 +17999,13 @@
                 </decay_modes>
                 <comment>Gamma spectometry 12          1939</comment>
             </isomer>
+            <isomer energy="501.948" extrapolated="False" uncertainity="0.003">
+                <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="ms" value="43.1"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 12          1958</comment>
+            </isomer>
             <isomer energy="641.745" extrapolated="False" uncertainity="0.003">
                 <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="us" value="4.3"/>
                 <decay_modes>
@@ -18590,6 +18468,13 @@
                     <decay mode="b-" relation="=" uncertainity="0" value="100"/>
                 </decay_modes>
                 <comment>Gamma spectometry 10          1945</comment>
+            </isomer>
+            <isomer energy="289.660" extrapolated="False" uncertainity="0.006">
+                <half_life extrapolated="False" relation="=" uncertainity="0.04" unit="s" value="2.18"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 10          1950</comment>
             </isomer>
         </isomers>
         <comment>10          1937</comment>
@@ -19094,6 +18979,14 @@
                     <decay mode="b-" relation="=" uncertainity="0" value="100"/>
                 </decay_modes>
                 <comment>Code ' ' is not documented' Uncertainity of energy is larger then energy itself 95 94It.At  1964</comment>
+            </isomer>
+            <isomer energy="240" extrapolated="True" uncertainity="50">
+                <half_life extrapolated="False" relation="=" uncertainity="0.3" unit="s" value="8.5"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="3" value="98.6"/>
+                    <decay mode="b-" relation="=" uncertainity="3" value="1.4"/>
+                </decay_modes>
+                <comment>Gamma spectometry 95          1969</comment>
             </isomer>
         </isomers>
         <comment>95          1949</comment>
@@ -20765,6 +20658,13 @@
                 </decay_modes>
                 <comment>Gamma spectometry 08          1947</comment>
             </isomer>
+            <isomer energy="36.8440" extrapolated="False" uncertainity="0.0014">
+                <half_life extrapolated="False" relation="=" uncertainity="0.2" unit="m" value="20.2"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 08          1947</comment>
+            </isomer>
             <isomer energy="40.8038" extrapolated="False" uncertainity="0.0007">
                 <half_life extrapolated="False" relation="=" uncertainity="0.3" unit="us" value="3.2"/>
                 <decay_modes>
@@ -21335,6 +21235,13 @@
                     <decay mode="it" relation="=" uncertainity="4" value="14"/>
                 </decay_modes>
                 <comment>Gamma spectometry 03          1956</comment>
+            </isomer>
+            <isomer energy="40.4" extrapolated="False" uncertainity="0.3">
+                <half_life extrapolated="False" relation="=" uncertainity="?" unit="s" value="~11"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 03          1976</comment>
             </isomer>
             <isomer energy="104.6" extrapolated="False" uncertainity="0.3">
                 <half_life extrapolated="False" relation="=" uncertainity="5" unit="ns" value="553"/>
@@ -25678,23 +25585,15 @@
         </isomers>
         <comment>11 91Fi03t  1966</comment>
     </nuclide>
-    <nuclide A="142" Z="63" element="Eu" id="142Eu">
-        <mass_defect extrapolated="False" uncertainity="30.0" value="-71310.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.10" unit="s" value="2.36"/>
-        <spin extrapolated="False" value="1+"/>
+    <nuclide A="142" Z="64" element="Gd" id="142Gd">
+        <mass_defect extrapolated="False" uncertainity="28.0" value="-66960.0"/>
+        <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="s" value="70.2"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="100"/>
+            <decay mode="ec" relation="=" uncertainity="5" value="52"/>
+            <decay mode="b+" relation="=" uncertainity="5" value="48"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="460" extrapolated="False" uncertainity="30">
-                <half_life extrapolated="False" relation="=" uncertainity="0.008" unit="m" value="1.223"/>
-                <decay_modes>
-                    <decay mode="b+" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Beta energy difference 11          1966</comment>
-            </isomer>
-        </isomers>
-        <comment>11 91Fi03t  1966</comment>
+        <comment>11          1986</comment>
     </nuclide>
     <nuclide A="142" Z="65" element="Tb" id="142Tb">
         <mass_defect extrapolated="False" uncertainity="700.0" value="-56560.0"/>
@@ -26618,6 +26517,13 @@
                 </decay_modes>
                 <comment>Code ' ' is not documented' Uncertainity of energy is larger then energy itself 97 93Al03t  1974</comment>
             </isomer>
+            <isomer energy="930" extrapolated="True" uncertainity="100">
+                <half_life extrapolated="False" relation="=" uncertainity="0.02" unit="ms" value="1.18"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 97          1989</comment>
+            </isomer>
         </isomers>
         <comment>97          1974</comment>
     </nuclide>
@@ -27113,6 +27019,13 @@
                 </decay_modes>
                 <comment>Gamma spectometry 11 93Al03t  1979</comment>
             </isomer>
+            <isomer energy="940" extrapolated="True" uncertainity="100">
+                <half_life extrapolated="False" relation="=" uncertainity="0.06" unit="ms" value="2.36"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 11          1984</comment>
+            </isomer>
         </isomers>
         <comment>11          1979</comment>
     </nuclide>
@@ -27574,6 +27487,13 @@
                     <decay mode="b+p" relation="=" uncertainity="3" value="1.2"/>
                 </decay_modes>
                 <comment>Code ' &amp;' is not documented' Uncertainity of energy is larger then energy itself 95 96Ga24t  1981</comment>
+            </isomer>
+            <isomer energy="810" extrapolated="True" uncertainity="140">
+                <half_life extrapolated="False" relation="=" uncertainity="0.3" unit="ms" value="5.2"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
+                </decay_modes>
+                <comment>Gamma spectometry 95          1984</comment>
             </isomer>
         </isomers>
         <comment>88Ni02j  1982</comment>
@@ -31710,14 +31630,15 @@
         </decay_modes>
         <comment>00 04Ke06t  1996</comment>
     </nuclide>
-    <nuclide A="167" Z="78" element="Pt" id="167Pt">
-        <mass_defect extrapolated="True" uncertainity="310.0" value="-6810.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="160" unit="us" value="800"/>
-        <spin extrapolated="True" value="7/2- "/>
+    <nuclide A="168" Z="63" element="Eu" id="168Eu">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>00 04Ke06t  1996</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="168" Z="64" element="Gd" id="168Gd">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-48360.0"/>
@@ -32144,16 +32065,15 @@
         </decay_modes>
         <comment></comment>
     </nuclide>
-    <nuclide A="169" Z="79" element="Au" id="169Au">
-        <mass_defect extrapolated="True" uncertainity="300.0" value="-1790.0"/>
-        <half_life extrapolated="True" relation="=" uncertainity="?" unit="us" value="150"/>
-        <spin extrapolated="True" value="1/2+ "/>
+    <nuclide A="170" Z="64" element="Gd" id="170Gd">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="p" relation="=" uncertainity="0" value="?"/>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment></comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="170" Z="65" element="Tb" id="170Tb">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-46720.0"/>
@@ -32604,15 +32524,15 @@
         </decay_modes>
         <comment>04          2004</comment>
     </nuclide>
-    <nuclide A="171" Z="80" element="Hg" id="171Hg">
-        <mass_defect extrapolated="True" uncertainity="310.0" value="3290.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="30" unit="us" value="70"/>
-        <spin extrapolated="True" value="3/2- "/>
+    <nuclide A="172" Z="65" element="Tb" id="172Tb">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="0.01#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>04          2004</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="172" Z="66" element="Dy" id="172Dy">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-48010.0"/>
@@ -33069,14 +32989,15 @@
         </decay_modes>
         <comment>03 04Ke06t  1999</comment>
     </nuclide>
-    <nuclide A="173" Z="80" element="Hg" id="173Hg">
-        <mass_defect extrapolated="True" uncertainity="200.0" value="-2710.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="260" unit="us" value="910"/>
-        <spin extrapolated="True" value="3/2- "/>
+    <nuclide A="174" Z="66" element="Dy" id="174Dy">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>03 04Ke06t  1999</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="174" Z="67" element="Ho" id="174Ho">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-45690.0"/>
@@ -33604,24 +33525,15 @@
         </isomers>
         <comment>09          1983</comment>
     </nuclide>
-    <nuclide A="175" Z="80" element="Hg" id="175Hg">
-        <mass_defect extrapolated="False" uncertainity="70.0" value="-7970.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="ms" value="10.6"/>
-        <spin extrapolated="False" value="(7/2-)"/>
+    <nuclide A="176" Z="67" element="Ho" id="176Ho">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="1#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="494" extrapolated="False" uncertainity="2">
-                <half_life extrapolated="False" relation="=" uncertainity="30" unit="ns" value="340"/>
-                <decay_modes>
-                    <decay mode="it" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Gamma spectometry 09          2009</comment>
-            </isomer>
-        </isomers>
-        <comment>09          1983</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="176" Z="68" element="Er" id="176Er">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-46630.0"/>
@@ -34140,25 +34052,15 @@
         </isomers>
         <comment>03          1999</comment>
     </nuclide>
-    <nuclide A="177" Z="81" element="Tl" id="177Tl">
-        <mass_defect extrapolated="False" uncertainity="23.0" value="-3325.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="5" unit="ms" value="18"/>
-        <spin extrapolated="False" value="(1/2+)"/>
+    <nuclide A="178" Z="68" element="Er" id="178Er">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="13" value="73"/>
-            <decay mode="p" relation="=" uncertainity="13" value="27"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="807" extrapolated="False" uncertainity="18">
-                <half_life extrapolated="False" relation="=" uncertainity="60" unit="us" value="180"/>
-                <decay_modes>
-                    <decay mode="p" relation="=" uncertainity="8" value="51"/>
-                    <decay mode="a" relation="=" uncertainity="8" value="49"/>
-                </decay_modes>
-                <comment>Proton decay 03 04Ke06td 1997</comment>
-            </isomer>
-        </isomers>
-        <comment>03          1999</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="178" Z="69" element="Tm" id="178Tm">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-44120.0"/>
@@ -34611,6 +34513,13 @@
                 </decay_modes>
                 <comment>Gamma spectometry 11Ve01etd2011</comment>
             </isomer>
+            <isomer energy="133.5" extrapolated="False" uncertainity="15.0">
+                <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-09" value="10"/>
+                <decay_modes>
+                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
+                </decay_modes>
+                <comment>Gamma spectometry 09 11Ve01ejd1980</comment>
+            </isomer>
         </isomers>
         <comment>09          1968</comment>
     </nuclide>
@@ -34664,14 +34573,15 @@
         </decay_modes>
         <comment>10 10An01tdj2010</comment>
     </nuclide>
-    <nuclide A="179" Z="82" element="Pb" id="179Pb">
-        <mass_defect extrapolated="False" uncertainity="80.0" value="2050.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.1" unit="ms" value="3.9"/>
-        <spin extrapolated="False" value="(9/2-)"/>
+    <nuclide A="180" Z="69" element="Tm" id="180Tm">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>10 10An01tdj2010</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="180" Z="70" element="Yb" id="180Yb">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-44600.0"/>
@@ -34932,14 +34842,15 @@
         </decay_modes>
         <comment>11          1996</comment>
     </nuclide>
-    <nuclide A="180" Z="82" element="Pb" id="180Pb">
-        <mass_defect extrapolated="False" uncertainity="14.0" value="-1930.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.5" unit="ms" value="4.2"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="181" Z="69" element="Tm" id="181Tm">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>11          1996</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="181" Z="70" element="Yb" id="181Yb">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-41090.0"/>
@@ -35248,24 +35159,14 @@
         </isomers>
         <comment>06 09An20tj 1989</comment>
     </nuclide>
-    <nuclide A="181" Z="82" element="Pb" id="181Pb">
-        <mass_defect extrapolated="False" uncertainity="80.0" value="-3120.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.8" unit="ms" value="39.0"/>
-        <spin extrapolated="False" value="(9/2-)"/>
+    <nuclide A="182" Z="70" element="Yb" id="182Yb">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="2#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="non-exist" extrapolated="False" uncertainity="RN">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="?" relation="" uncertainity="" value=""/>
-                </decay_modes>
-                <comment>Gamma spectometry 96To01i</comment>
-            </isomer>
-        </isomers>
-        <comment>06 09An20tj 1989</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="182" Z="71" element="Lu" id="182Lu">
         <mass_defect extrapolated="True" uncertainity="200.0" value="-41880.0"/>
@@ -35494,15 +35395,14 @@
         </decay_modes>
         <comment>10          1986</comment>
     </nuclide>
-    <nuclide A="182" Z="82" element="Pb" id="182Pb">
-        <mass_defect extrapolated="False" uncertainity="12.0" value="-6826.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="5" unit="ms" value="55"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="183" Z="70" element="Yb" id="183Yb">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="2#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>10          1986</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="183" Z="71" element="Lu" id="183Lu">
         <mass_defect extrapolated="False" uncertainity="90.0" value="-39720.0"/>
@@ -35744,25 +35644,14 @@
         </isomers>
         <comment>03 09Se13j  1980</comment>
     </nuclide>
-    <nuclide A="183" Z="82" element="Pb" id="183Pb">
-        <mass_defect extrapolated="False" uncertainity="28.0" value="-7571.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="30" unit="ms" value="535"/>
-        <spin extrapolated="False" value="3/2-"/>
+    <nuclide A="184" Z="70" element="Yb" id="184Yb">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="10#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="94" extrapolated="False" uncertainity="8">
-                <half_life extrapolated="False" relation="=" uncertainity="20" unit="ms" value="415"/>
-                <decay_modes>
-                    <decay mode="a" relation="~" uncertainity="0" value="100"/>
-                    <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Alpha energy difference 03 09Se13j  1980</comment>
-            </isomer>
-        </isomers>
-        <comment>03 09Se13j  1980</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="184" Z="71" element="Lu" id="184Lu">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-36410.0"/>
@@ -35995,23 +35884,14 @@
         </isomers>
         <comment>10          2003</comment>
     </nuclide>
-    <nuclide A="184" Z="83" element="Bi" id="184Bi">
-        <mass_defect extrapolated="False" uncertainity="80.0" value="1190.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.5" unit="ms" value="6.6"/>
-        <spin extrapolated="True" value="3+ "/>
+    <nuclide A="185" Z="70" element="Yb" id="185Yb">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="150" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="=" uncertainity="2" unit="ms" value="13"/>
-                <decay_modes>
-                    <decay mode="a" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Code ' &amp;' is not documented' Uncertainity of energy is larger then energy itself 10          2002</comment>
-            </isomer>
-        </isomers>
-        <comment>10          2003</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="185" Z="71" element="Lu" id="185Lu">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-33890.0"/>
@@ -36272,33 +36152,14 @@
         </isomers>
         <comment>96Da06j  1996</comment>
     </nuclide>
-    <nuclide A="185" Z="83" element="Bi" id="185Bi">
-        <mass_defect extrapolated="True" uncertainity="80.0" value="-2240.0"/>
-        <half_life extrapolated="True" relation="=" uncertainity="?" unit="ms" value="2"/>
-        <spin extrapolated="True" value="9/2- "/>
+    <nuclide A="186" Z="71" element="Lu" id="186Lu">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="p" relation="=" uncertainity="0" value="?"/>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="80" extrapolated="True" uncertainity="80">
-                <half_life extrapolated="False" relation="=" uncertainity="4" unit="us" value="58"/>
-                <decay_modes>
-                    <decay mode="p" relation="=" uncertainity="2" value="90"/>
-                    <decay mode="a" relation="=" uncertainity="2" value="10"/>
-                </decay_modes>
-                <comment>Code ' &amp;' is not documented' Uncertainity of energy is larger then energy itself 06          1996</comment>
-            </isomer>
-            <isomer energy="180" extrapolated="True" uncertainity="60">
-                <half_life extrapolated="False" relation="=" uncertainity="10" unit="us" value="50"/>
-                <decay_modes>
-                    <decay mode="p" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="a" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Existence under discussion 04An07itd2004</comment>
-            </isomer>
-        </isomers>
-        <comment>96Da06j  1996</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="186" Z="72" element="Hf" id="186Hf">
         <mass_defect extrapolated="False" uncertainity="50.0" value="-36420.0"/>
@@ -36535,15 +36396,14 @@
         </decay_modes>
         <comment>05Hu.Ad  2005</comment>
     </nuclide>
-    <nuclide A="186" Z="84" element="Po" id="186Po">
-        <mass_defect extrapolated="False" uncertainity="30.0" value="4090.0"/>
-        <half_life extrapolated="True" relation="=" uncertainity="?" unit="us" value="40"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="187" Z="71" element="Lu" id="187Lu">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="p" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>05Hu.Ad  2005</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="187" Z="72" element="Hf" id="187Hf">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-32820.0"/>
@@ -36849,25 +36709,14 @@
         </isomers>
         <comment>09          2005</comment>
     </nuclide>
-    <nuclide A="187" Z="84" element="Po" id="187Po">
-        <mass_defect extrapolated="False" uncertainity="30.0" value="2830.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.25" unit="ms" value="1.40"/>
-        <spin extrapolated="False" value="(1/2-,5/2-)"/>
+    <nuclide A="188" Z="71" element="Lu" id="188Lu">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="4" extrapolated="False" uncertainity="27">
-                <half_life extrapolated="False" relation="=" uncertainity="?" unit="ms" value="0.5"/>
-                <decay_modes>
-                    <decay mode="a" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Code 'AD ' is not documented' Uncertainity of energy is larger then energy itself 06An11etd2006</comment>
-            </isomer>
-        </isomers>
-        <comment>09          2005</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="188" Z="72" element="Hf" id="188Hf">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-30880.0"/>
@@ -37344,15 +37193,14 @@
         </decay_modes>
         <comment>07 05Va04t  1999</comment>
     </nuclide>
-    <nuclide A="189" Z="84" element="Po" id="189Po">
-        <mass_defect extrapolated="False" uncertainity="22.0" value="-1422.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.4" unit="ms" value="3.8"/>
-        <spin extrapolated="False" value="(5/2-)"/>
+    <nuclide A="190" Z="72" element="Hf" id="190Hf">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>07 05Va04t  1999</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="190" Z="73" element="Ta" id="190Ta">
         <mass_defect extrapolated="True" uncertainity="200.0" value="-28510.0"/>
@@ -38162,23 +38010,14 @@
         </isomers>
         <comment>06 06An04td 2006</comment>
     </nuclide>
-    <nuclide A="192" Z="85" element="At" id="192At">
-        <mass_defect extrapolated="False" uncertainity="30.0" value="2940.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.6" unit="ms" value="11.5"/>
-        <spin extrapolated="True" value="3+ "/>
+    <nuclide A="193" Z="73" element="Ta" id="193Ta">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="0" extrapolated="False" uncertainity="40">
-                <half_life extrapolated="False" relation="=" uncertainity="6" unit="ms" value="88"/>
-                <decay_modes>
-                    <decay mode="a" relation="=" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Code 'AD &amp;' is not documented' Uncertainity of energy is larger then energy itself 06 06An04etd2006</comment>
-            </isomer>
-        </isomers>
-        <comment>06 06An04td 2006</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="193" Z="74" element="W" id="193W">
         <mass_defect extrapolated="True" uncertainity="200.0" value="-26290.0"/>
@@ -38454,14 +38293,14 @@
         </decay_modes>
         <comment>07 06An36td 2006</comment>
     </nuclide>
-    <nuclide A="193" Z="86" element="Rn" id="193Rn">
-        <mass_defect extrapolated="False" uncertainity="25.0" value="9043.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.27" unit="ms" value="1.15"/>
-        <spin extrapolated="True" value="3/2- "/>
+    <nuclide A="194" Z="73" element="Ta" id="194Ta">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>07 06An36td 2006</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="194" Z="74" element="W" id="194W">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-24530.0"/>
@@ -38710,15 +38549,14 @@
         </decay_modes>
         <comment>07          2006</comment>
     </nuclide>
-    <nuclide A="194" Z="86" element="Rn" id="194Rn">
-        <mass_defect extrapolated="False" uncertainity="17.0" value="5723.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="160" unit="us" value="780"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="195" Z="74" element="W" id="195W">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>07          2006</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="195" Z="75" element="Re" id="195Re">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-25580.0"/>
@@ -38959,23 +38797,14 @@
         </isomers>
         <comment>07          2001</comment>
     </nuclide>
-    <nuclide A="195" Z="86" element="Rn" id="195Rn">
-        <mass_defect extrapolated="False" uncertainity="50.0" value="5050.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="3" unit="ms" value="7"/>
-        <spin extrapolated="False" value="(3/2-)"/>
+    <nuclide A="196" Z="74" element="W" id="196W">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="80" extrapolated="False" uncertainity="50">
-                <half_life extrapolated="False" relation="=" uncertainity="3" unit="ms" value="6"/>
-                <decay_modes>
-                    <decay mode="a" relation="~" uncertainity="0" value="100"/>
-                </decay_modes>
-                <comment>Code 'AD ' is not documented' Uncertainity of energy is larger then energy itself 07          2001</comment>
-            </isomer>
-        </isomers>
-        <comment>07          2001</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="196" Z="75" element="Re" id="196Re">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-22540.0"/>
@@ -39203,15 +39032,14 @@
         </decay_modes>
         <comment>07          1995</comment>
     </nuclide>
-    <nuclide A="196" Z="86" element="Rn" id="196Rn">
-        <mass_defect extrapolated="False" uncertainity="14.0" value="1971.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="1.1" unit="ms" value="4.7"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="197" Z="74" element="W" id="197W">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="0.06#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>07          1995</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="197" Z="75" element="Re" id="197Re">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-20500.0"/>
@@ -39512,7 +39340,7 @@
         <half_life extrapolated="False" relation="=" uncertainity="0.0012" unit="d" value="2.6948"/>
         <spin extrapolated="False" value="2-"/>
         <decay_modes>
-            <decay mode="-" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="100"/>
         </decay_modes>
         <isomers>
             <isomer energy="312.2200" extrapolated="False" uncertainity="0.0020">
@@ -39698,26 +39526,14 @@
         </isomers>
         <comment>09          1984</comment>
     </nuclide>
-    <nuclide A="198" Z="86" element="Rn" id="198Rn">
-        <mass_defect extrapolated="False" uncertainity="13.0" value="-1230.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="3" unit="ms" value="65"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="199" Z="75" element="Re" id="199Re">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="?"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="1#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="non-exist" extrapolated="False" uncertainity="EU">
-                <half_life extrapolated="False" relation="=" uncertainity="9" unit="ms" value="50"/>
-                <decay_modes>
-                    <decay mode="a" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-                    <decay mode="it" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Gamma spectometry </comment>
-            </isomer>
-        </isomers>
-        <comment>09          1984</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="199" Z="76" element="Os" id="199Os">
         <mass_defect extrapolated="True" uncertainity="200.0" value="-20480.0"/>
@@ -40658,14 +40474,14 @@
         </decay_modes>
         <comment>08          2005</comment>
     </nuclide>
-    <nuclide A="202" Z="88" element="Ra" id="202Ra">
-        <mass_defect extrapolated="False" uncertainity="24.0" value="9091.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="20" unit="ms" value="31"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="203" Z="76" element="Os" id="203Os">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="=" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>08          2005</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="203" Z="77" element="Ir" id="203Ir">
         <mass_defect extrapolated="True" uncertainity="400.0" value="-14690.0"/>
@@ -41169,15 +40985,15 @@
         </decay_modes>
         <comment>10 05Uu02t  1995</comment>
     </nuclide>
-    <nuclide A="204" Z="88" element="Ra" id="204Ra">
-        <mass_defect extrapolated="False" uncertainity="14.0" value="6047.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="9" unit="ms" value="60"/>
-        <spin extrapolated="False" value="0+"/>
+    <nuclide A="205" Z="77" element="Ir" id="205Ir">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="0.3#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>10 05Uu02t  1995</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="205" Z="78" element="Pt" id="205Pt">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-12970.0"/>
@@ -41681,25 +41497,15 @@
         </isomers>
         <comment>08          1998</comment>
     </nuclide>
-    <nuclide A="206" Z="89" element="Ac" id="206Ac">
-        <mass_defect extrapolated="True" uncertainity="70.0" value="13460.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="7" unit="ms" value="25"/>
-        <spin extrapolated="False" value="(3+)"/>
+    <nuclide A="207" Z="78" element="Pt" id="207Pt">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value=""/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
-            <decay mode="b+" relation="=" uncertainity="0" value="0.2#"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="250" extrapolated="True" uncertainity="80">
-                <half_life extrapolated="False" relation="=" uncertainity="16" unit="ms" value="41"/>
-                <decay_modes>
-                    <decay mode="a" relation="~" uncertainity="0" value="100"/>
-                    <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-                </decay_modes>
-                <comment>Alpha energy difference 08          1996</comment>
-            </isomer>
-        </isomers>
-        <comment>08          1998</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="207" Z="79" element="Au" id="207Au">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-10810.0"/>
@@ -41885,14 +41691,15 @@
         </decay_modes>
         <comment>11 98Es02t  1994</comment>
     </nuclide>
-    <nuclide A="207" Z="89" element="Ac" id="207Ac">
-        <mass_defect extrapolated="False" uncertainity="50.0" value="11150.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="8" unit="ms" value="31"/>
-        <spin extrapolated="True" value="9/2- "/>
+    <nuclide A="208" Z="78" element="Pt" id="208Pt">
+        <mass_defect extrapolated="False" uncertainity="?" value="?"/>
+        <half_life extrapolated="False" relation="&gt;" uncertainity="?" unit="1e-09" value="300"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="a" relation="~" uncertainity="0" value="100"/>
+            <decay mode="b-" relation="=" uncertainity="0" value="?"/>
+            <decay mode="b-n" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>11 98Es02t  1994</comment>
+        <comment>12Ku26i  2012</comment>
     </nuclide>
     <nuclide A="208" Z="79" element="Au" id="208Au">
         <mass_defect extrapolated="True" uncertainity="300.0" value="-6100.0"/>
@@ -46539,25 +46346,15 @@
         </isomers>
         <comment>08          1980</comment>
     </nuclide>
-    <nuclide A="240" Z="97" element="Bk" id="240Bk">
-        <mass_defect extrapolated="True" uncertainity="150.0" value="55670.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="0.8" unit="m" value="4.8"/>
-        <spin extrapolated="False" value=""/>
+    <nuclide A="240" Z="98" element="Cf" id="240Cf">
+        <mass_defect extrapolated="False" uncertainity="19.0" value="57991.0"/>
+        <half_life extrapolated="False" relation="=" uncertainity="0.9" unit="s" value="40.3"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="0" value="?"/>
-            <decay mode="a" relation="=" uncertainity="0" value="10#"/>
-            <decay mode="b+sf" relation="=" uncertainity="13" value="0.0020"/>
+            <decay mode="a" relation="=" uncertainity="2" value="98.5"/>
+            <decay mode="sf" relation="=" uncertainity="2" value="1.5"/>
         </decay_modes>
-        <isomers>
-            <isomer energy="240" extrapolated="True" uncertainity="100">
-                <half_life extrapolated="False" relation="?" uncertainity="?" unit="?" value="?"/>
-                <decay_modes>
-                    <decay mode="?" relation="" uncertainity="" value=""/>
-                </decay_modes>
-                <comment>Gamma spectometry </comment>
-            </isomer>
-        </isomers>
-        <comment>08          1980</comment>
+        <comment>08 10As.At  1970</comment>
     </nuclide>
     <nuclide A="240" Z="99" element="Es" id="240Es">
         <mass_defect extrapolated="True" uncertainity="400.0" value="64200.0"/>
@@ -47656,15 +47453,14 @@
         </decay_modes>
         <comment>99          1973</comment>
     </nuclide>
-    <nuclide A="248" Z="101" element="Md" id="248Md">
-        <mass_defect extrapolated="True" uncertainity="240.0" value="77150.0"/>
-        <half_life extrapolated="False" relation="=" uncertainity="3" unit="s" value="7"/>
-        <spin extrapolated="False" value=""/>
+    <nuclide A="248" Z="102" element="No" id="248No">
+        <mass_defect extrapolated="True" uncertainity="220.0" value="80620.0"/>
+        <half_life extrapolated="False" relation="&lt;" uncertainity="?" unit="1e-06" value="2"/>
+        <spin extrapolated="False" value="0+"/>
         <decay_modes>
-            <decay mode="b+" relation="=" uncertainity="10" value="80"/>
-            <decay mode="a" relation="=" uncertainity="10" value="20"/>
+            <decay mode="sf" relation="=" uncertainity="0" value="?"/>
         </decay_modes>
-        <comment>99          1973</comment>
+        <comment>03Be18i</comment>
     </nuclide>
     <nuclide A="249" Z="95" element="Am" id="249Am">
         <mass_defect extrapolated="True" uncertainity="300.0" value="73100.0"/>

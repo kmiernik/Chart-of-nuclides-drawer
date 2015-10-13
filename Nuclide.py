@@ -427,6 +427,7 @@ class NuclideNb03(Nuclide):
         self.decay_modes = self._parse_decay_modes(decay_modes)
         self.comment = comment
 
+
     def _parse_mass_defect(self, mass_defect):
         """Returns dict {value, uncertainity, extrapolated}
         parsed from format used by nubase2003"""
@@ -439,14 +440,18 @@ class NuclideNb03(Nuclide):
             mass_defect = mass_defect.split()
             for it in mass_defect:
                 it = it.strip()
-            result['value'] = float(mass_defect[0])
             if len(mass_defect) == 2:
+                result['value'] = float(mass_defect[0])
                 result['uncertainity'] = float(mass_defect[1])
+            elif len(mass_defect) == 0:
+                result['value'] = '?'
+                result['uncertainity'] = '?'
             else:
                 result['uncertainity'] = '?'
         except (ValueError, IndexError):
             raise ParameterError(" {} is not valid mass defect string".format(mass_defect))
         return result
+
 
     def _parse_half_life(self, half_life):
         """Half-life given as a string "value unit" white-space separated
@@ -487,8 +492,35 @@ class NuclideNb03(Nuclide):
             result['value'] = items[0]
             result['unit'] = items[1] 
             result['relation'] = '='
+        elif len(items) == 1:
+            result['uncertainity'] = '?'
+            if items[0].find('<') > -1:
+                result['relation'] = '<'
+                items[0] = items[0].strip('<')
+            elif items[0].find('>') > -1:
+                result['relation'] = '>'
+                items[0] = items[0].strip('>')
+            else:
+                raise ParameterError("String {} is not a valid half life string".format(half_life))
+            
+            # > < seems to be used with fs, ns and us only
+            if items[0].find('ns') > -1:
+                items[0] = items[0].strip('ns')
+                result['unit'] = self._short_time_units['ns']
+                result['value'] = items[0]
+            elif items[0].find('us') > -1:
+                items[0] = items[0].strip('us')
+                result['unit'] = self._short_time_units['us']
+                result['value'] = items[0]
+            elif items[0].find('fs') > -1:
+                items[0] = items[0].strip('fs')
+                result['unit'] = self._short_time_units['fs']
+                result['value'] = items[0]
+            else:
+                raise ParameterError("String {} is not a valid half life string".format(half_life))
         else:
             raise ParameterError("String {} is not a valid half life string".format(half_life))
+        #print(result)
         return result
 
     def _parse_gs_spin(self, gs_spin):
@@ -514,6 +546,17 @@ class NuclideNb03(Nuclide):
         decay_modes = decay_modes.replace('le', '\u2264')
         decay_modes = decay_modes.replace('ge', '\u2265')
             
+        # Remove whatever is in [] bracket (some extra info)
+        while True:
+            begin = decay_modes.find('[')
+            end = decay_modes.find(']')
+            if begin < 0:
+                break
+            if end > -1:
+                decay_modes = decay_modes[:begin] + decay_modes[end+1:]
+            else:
+                decay_modes = decay_modes[:begin]
+
         decay_list = [] 
         if len(decay_modes.strip()) == 0:
             empty = {'mode' : '?', 'value' : '', 'relation' : '', 
