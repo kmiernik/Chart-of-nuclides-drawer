@@ -93,8 +93,8 @@ class Nuclide(object):
               'Cm',  'Bk',  'Cf',  'Es',  'Fm',\
               'Md',  'No',  'Lr',  'Rf',  'Db',\
               'Sg',  'Bh',  'Hs',  'Mt',  'Ds',\
-              'Rg',  'Cn', 'Uut',  'Fl', 'Uup',\
-              'Lv', 'Uus', 'Uuo', 'Uue', 'Ubn'
+              'Rg',  'Cn',  'Nh',  'Fl',  'Mc',\
+              'Lv',  'Ts',  'Og', 'Uue', 'Ubn'
 
     def __init__(self, Z = 0, A = 0, mass_defect = None,
                  half_life = None, gs_spin = None, decay_modes = None,
@@ -469,6 +469,14 @@ class NuclideNb03(Nuclide):
         if result['extrapolated']:
             half_life = half_life.replace('#', ' ')
         
+        # Sometimes R=, T=, R< or similar is appearing (whatever it means?)
+        if half_life.find('T') > -1 or half_life.find('R') > -1:
+            result['value'] = '?'
+            result['unit'] = '?'
+            result['relation'] = '?'
+            result['uncertainity'] = '?'
+            return result
+
         items = half_life.split()
         for it in items:
             it = it.strip()
@@ -503,24 +511,17 @@ class NuclideNb03(Nuclide):
             else:
                 raise ParameterError("String {} is not a valid half life string".format(half_life))
             
-            # > < seems to be used with fs, ns and us only
-            if items[0].find('ns') > -1:
-                items[0] = items[0].strip('ns')
-                result['unit'] = self._short_time_units['ns']
-                result['value'] = items[0]
-            elif items[0].find('us') > -1:
-                items[0] = items[0].strip('us')
-                result['unit'] = self._short_time_units['us']
-                result['value'] = items[0]
-            elif items[0].find('fs') > -1:
-                items[0] = items[0].strip('fs')
-                result['unit'] = self._short_time_units['fs']
-                result['value'] = items[0]
-            else:
-                raise ParameterError("String {} is not a valid half life string".format(half_life))
+            if result['relation'] != '?':
+                for unit in self._short_time_units.keys():
+                    if items[0].find(unit) > -1:
+                        items[0] = items[0].strip(unit)
+                        result['unit'] = self._short_time_units[unit]
+                        result['value'] = items[0]
+                        break
+                else:
+                    raise ParameterError("String {} is not a valid half life string".format(half_life))
         else:
             raise ParameterError("String {} is not a valid half life string".format(half_life))
-        #print(result)
         return result
 
     def _parse_gs_spin(self, gs_spin):
@@ -823,7 +824,7 @@ class NuclideXml(Nuclide):
                     hl_data[attr] = value
                 i_data['half_life'] = hl_data
 
-                decay_modes = nuclide.getElementsByTagName("decay_modes")[0]
+                decay_modes = isomer.getElementsByTagName("decay_modes")[0]
                 dm_data = []
                 for decay in decay_modes.getElementsByTagName("decay"):
                     mode_data = {}
