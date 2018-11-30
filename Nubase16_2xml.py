@@ -98,7 +98,7 @@ if __name__ == "__main__":
         mass_defect = line[18:38].strip()
         isomer_data = line[38:60].strip()
         half_life = line[60:78].strip()
-        gs_spin = line[79:93].strip()
+        spin = line[79:93].strip()
         comment = line[93:109].strip()
         decay_modes = line[110:-1].strip().lower()
         try:
@@ -108,9 +108,9 @@ if __name__ == "__main__":
                 else:
                     first = False
                 isotope = NuclideNb03(Z, A, mass_defect, half_life,
-                                      gs_spin, decay_modes, comment)
+                                      spin, decay_modes, comment)
             else:
-                isotope.nb_add_isomer(isomer_data, half_life,
+                isotope.nb_add_isomer(isomer_data, half_life, spin,
                                       decay_modes, comment)
 
         except ParameterError as err:

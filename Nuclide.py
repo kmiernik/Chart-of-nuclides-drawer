@@ -373,6 +373,11 @@ class Nuclide(object):
                 ihalf_life.setAttribute(key, str(value))
             isomer.appendChild(ihalf_life)
 
+            ispin = table.createElement("spin")
+            for key, value in state['spin'].items():
+                ispin.setAttribute(key, str(value))
+            isomer.appendChild(ispin)
+
             idecay_modes = table.createElement("decay_modes")
             for mode in state['decay_modes']:
                 idecay = table.createElement("decay")
@@ -536,6 +541,20 @@ class NuclideNb03(Nuclide):
         result['value'] = gs_spin
         return result
 
+
+    def _parse_isomer_spin(self, spin):
+        """Parses nubase style spin information
+
+        returns dictionary {value, extrapolated} """
+        result = {}
+        result['extrapolated'] = True if spin.count('#') > 0 else False
+        if result['extrapolated']:
+            spin = spin.replace('#', ' ')
+        result['value'] = spin[0:8].strip()
+        result['T'] = spin[8:].strip('T= ')
+        return result
+
+
     def _parse_decay_modes(self, decay_modes):
         """Parses decay modes string from nubase
 
@@ -596,10 +615,11 @@ class NuclideNb03(Nuclide):
         return decay_list
 
 
-    def nb_add_isomer(self, isomer_data, half_life, decay_modes, comment):
+    def nb_add_isomer(self, isomer_data, half_life, spin, decay_modes, comment):
         """Adds isomer using nubase style data"""
         half_life = self._parse_half_life(half_life)
         decay_modes = self._parse_decay_modes(decay_modes)
+        spin = self._parse_isomer_spin(spin)
 
         isomer_data = isomer_data.strip()
 
@@ -652,6 +672,7 @@ class NuclideNb03(Nuclide):
                    'uncertainity': error,
                    'extrapolated': extrapolated,
                    'half_life': half_life,
+                   'spin': spin,
                    'decay_modes' : decay_modes,
                    'comment': code + " " + comment }
         self.add_isomer(result)
