@@ -838,6 +838,14 @@ class NuclideXml(Nuclide):
                     value = isomer.getAttribute(attr)
                     i_data[attr] = value
 
+                i_spin = isomer.getElementsByTagName('spin')[0]
+                si_attrs = ['value', 'extrapolated', 'T']
+                spin_data = {}
+                for attr in si_attrs:
+                    value = i_spin.getAttribute(attr)
+                    spin_data[attr] = value
+                i_data['spin'] = spin_data
+
                 half_life = isomer.getElementsByTagName('half_life')[0]
                 hl_data = {}
                 for attr in hl_attr:
