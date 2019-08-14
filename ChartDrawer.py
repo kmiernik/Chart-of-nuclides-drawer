@@ -328,35 +328,41 @@ def draw_nuclide(nuclide, layers, position, args):
     tertiary_size  = None
     if len(nuclide.decay_modes) > 1:
         for i in range(1, len(nuclide.decay_modes)):
-            if nuclide.decay_modes[i]['mode'] in basic_decay_modes:
-                secondary_color = COLORS[nuclide.decay_modes[i]['mode']]
-                try:
-                    if ( float(nuclide.decay_modes[i]['value']) > 5.0 and
-                         primary_color != COLORS['is'] ) :
+            try:
+                if nuclide.decay_modes[i]['mode'] in basic_decay_modes:
+                    v = float(nuclide.decay_modes[i]['value'].strip('#'))
+                    secondary_color = COLORS[nuclide.decay_modes[i]['mode']]
+                    if v > 5.0 and primary_color != COLORS['is']:
                         secondary_size = 'large'
-                    else:
+                    elif v > 0.0:
                         secondary_size = 'small'
-                    break
-                except ValueError:
+                elif (re.search(cluster_re, nuclide.decay_modes[i]['mode']) 
+                        is not None):
                     secondary_size = 'small'
-            elif re.search(cluster_re, nuclide.decay_modes[i]['mode']) is not None:
-                secondary_size = 'small'
-                secondary_color = COLORS['cluster']
-                break
+                    secondary_color = COLORS['cluster']
+                    break
+            except ValueError:
+                continue
 
         if ( len(nuclide.decay_modes) > 2 and
              ( secondary_size == 'large' or
                (secondary_size == 'small' and primary_color == COLORS['is'])) ):
             for i in range(2, len(nuclide.decay_modes)):
-                if nuclide.decay_modes[i]['mode'] in basic_decay_modes:
-                    tertiary_color = COLORS[nuclide.decay_modes[i]['mode']]
-                    tertiary_size  = 'small'
-                    break
-                elif re.search(cluster_re, 
-                               nuclide.decay_modes[i]['mode']) is not None:
-                    tertiary_size = 'small'
-                    tertiary_color = COLORS['cluster']
-                    break
+                try:
+                    if nuclide.decay_modes[i]['mode'] in basic_decay_modes:
+                        v = float(nuclide.decay_modes[i]['value'].strip('#'))
+                        if v > 0.0:
+                            tertiary_color = (
+                                    COLORS[nuclide.decay_modes[i]['mode']])
+                            tertiary_size  = 'small'
+                        break
+                    elif re.search(cluster_re, 
+                                nuclide.decay_modes[i]['mode']) is not None:
+                        tertiary_size = 'small'
+                        tertiary_color = COLORS['cluster']
+                        break
+                except ValueError:
+                    continue
 
     _draw_rectangle(layers[0], position,
                     primary_color, '{}0'.format(nuclide))

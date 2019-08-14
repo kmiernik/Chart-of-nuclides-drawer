@@ -818,6 +818,12 @@ class NuclideXml(Nuclide):
             s_data[attr] = value
         self.gs_spin = s_data
 
+        comment = nuclide.getElementsByTagName('comment')[-1]
+        try:
+            self.comment = comment.firstChild.nodeValue
+        except AttributeError:
+            self.comment = ''
+
         decay_modes = nuclide.getElementsByTagName("decay_modes")[0]
         decay_attr = ["mode", "value", "relation", "uncertainity"]
         dm_data = []
