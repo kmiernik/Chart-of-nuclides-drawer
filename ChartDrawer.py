@@ -145,8 +145,7 @@ def load_xml_nuclear_table(datafile, n_range, z_range,
             isotope = NuclideXml(Z, A, nuclide)
             data.append(isotope)
         except (ValueError, LookupError) as err:
-            print("{0}: import error: {1}".format(datafile, err))
-            return False
+            print("{0}: import error: {1}".format(nuclide.getAttribute('id'), err))
     return data
 
 
